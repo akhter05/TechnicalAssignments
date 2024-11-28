@@ -1,0 +1,47 @@
+/**
+ * 
+ */
+package PageObjects;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+/**
+ * 
+ */
+public class TestExceptionPage extends BasePage {
+
+	public TestExceptionPage(WebDriver driver) {
+		super(driver);
+
+	}
+
+	@FindBy(xpath = "//button[@id='edit_btn']")
+	WebElement editBtn;
+
+	@FindBy(xpath = "//button[@id='save_btn']]")
+	WebElement saveBtn;
+
+	@FindBy(xpath = "//input[@value='Pizza']")
+	WebElement inputFavFoodField;
+
+	@FindBy(xpath = "//button[@id='add_btn']")
+	WebElement addBtn;
+
+	public void clickEditButton() {
+		editBtn.click();
+	}
+
+	public void inputFavouriteFoodAndSave(String food) {
+		inputFavFoodField.clear();
+		inputFavFoodField.sendKeys(food);
+		saveBtn.click();
+	}
+
+	public void addFavouriteFood(String food) {
+
+		addBtn.click();
+	}
+
+}

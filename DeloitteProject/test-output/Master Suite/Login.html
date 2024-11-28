@@ -55,13 +55,13 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Login</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>7/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Nov 28 12:05:36 AEST 2024</td>
+<td>Started on:</td><td>Thu Nov 28 15:54:38 AEST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>87 seconds (87431 ms)</td>
+<tr><td>Total time:</td><td>33 seconds (33920 ms)</td>
 </tr><tr>
-<td>Included groups:</td><td>datadriven regression sanity </td>
+<td>Included groups:</td><td>regression </td>
 </tr><tr>
 <td>Excluded groups:</td><td></td>
 </tr>
@@ -76,17 +76,17 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.TC001_LogInSuccess.Veiry_Login_Success()'><b>Veiry_Login_Success</b><br>Test class: testCases.TC001_LogInSuccess</td>
+<td title='testCases.TC002_LogInFail.Verify_Login_Fail()'><b>Verify_Login_Fail</b><br>Test class: testCases.TC002_LogInFail</td>
 <td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at testCases.TC001_LogInSuccess.Veiry_Login_Success(TC001_LogInSuccess.java:36)
+	at testCases.TC002_LogInFail.Verify_Login_Fail(TC002_LogInFail.java:39)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace671536858", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace671536858'><pre>java.lang.AssertionError: expected [true] but found [false]
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1673604690", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1673604690'><pre>java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertTrue(Assert.java:57)
 	at org.testng.Assert.assertTrue(Assert.java:67)
-	at testCases.TC001_LogInSuccess.Veiry_Login_Success(TC001_LogInSuccess.java:36)
+	at testCases.TC002_LogInFail.Verify_Login_Fail(TC002_LogInFail.java:39)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -114,8 +114,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>13</td>
-<td>testCases.TC001_LogInSuccess@302552ec</td></tr>
+<td>2</td>
+<td>testCases.TC002_LogInFail@55fe41ea</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -126,40 +126,10 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.TC002_LogInFail.Verify_Login_Fail()'><b>Verify_Login_Fail</b><br>Test class: testCases.TC002_LogInFail</td>
+<td title='testCases.TC004_TestException_TC2.Verify_add_favorite_food()'><b>Verify_add_favorite_food</b><br>Test class: testCases.TC004_TestException_TC2</td>
 <td></td>
-<td>1</td>
-<td>testCases.TC002_LogInFail@ba2f4ec</td></tr>
-<tr>
-<td title='testCases.TC003_LoginDataDriven.Verify_LoginByDataDriven()'><b>Verify_LoginByDataDriven</b><br>Test class: testCases.TC003_LoginDataDriven<br>Parameters: null, Password123, Invalid</td>
-<td></td>
-<td>10</td>
-<td>testCases.TC003_LoginDataDriven@1c1bbc4e</td></tr>
-<tr>
-<td title='testCases.TC003_LoginDataDriven.Verify_LoginByDataDriven()'><b>Verify_LoginByDataDriven</b><br>Test class: testCases.TC003_LoginDataDriven<br>Parameters: student, Password123, Valid</td>
-<td></td>
-<td>2</td>
-<td>testCases.TC003_LoginDataDriven@1c1bbc4e</td></tr>
-<tr>
-<td title='testCases.TC003_LoginDataDriven.Verify_LoginByDataDriven()'><b>Verify_LoginByDataDriven</b><br>Test class: testCases.TC003_LoginDataDriven<br>Parameters: professor, Password123, Invalid</td>
-<td></td>
-<td>10</td>
-<td>testCases.TC003_LoginDataDriven@1c1bbc4e</td></tr>
-<tr>
-<td title='testCases.TC003_LoginDataDriven.Verify_LoginByDataDriven()'><b>Verify_LoginByDataDriven</b><br>Test class: testCases.TC003_LoginDataDriven<br>Parameters: student, null, Invalid</td>
-<td></td>
-<td>11</td>
-<td>testCases.TC003_LoginDataDriven@1c1bbc4e</td></tr>
-<tr>
-<td title='testCases.TC003_LoginDataDriven.Verify_LoginByDataDriven()'><b>Verify_LoginByDataDriven</b><br>Test class: testCases.TC003_LoginDataDriven<br>Parameters: student, Password123, Valid</td>
-<td></td>
-<td>3</td>
-<td>testCases.TC003_LoginDataDriven@1c1bbc4e</td></tr>
-<tr>
-<td title='testCases.TC003_LoginDataDriven.Verify_LoginByDataDriven()'><b>Verify_LoginByDataDriven</b><br>Test class: testCases.TC003_LoginDataDriven<br>Parameters: teacher, Password123, Invalid</td>
-<td></td>
-<td>11</td>
-<td>testCases.TC003_LoginDataDriven@1c1bbc4e</td></tr>
+<td>16</td>
+<td>testCases.TC004_TestException_TC2@1ce24091</td></tr>
 </table><p>
 </body>
 </html>

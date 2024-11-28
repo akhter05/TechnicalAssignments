@@ -6,7 +6,11 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
+		<item key="selection" value=""/>
 		<list key="findhistory">
+			<item value="log4j12"/>
+			<item value="API"/>
+			<item value="slf4j-api"/>
 			<item value="datadriven"/>
 		</list>
 		<list key="replacehistory">

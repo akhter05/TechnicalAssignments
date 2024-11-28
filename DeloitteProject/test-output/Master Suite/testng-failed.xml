@@ -9,19 +9,17 @@
     <parameter name="browser" value="chrome"/>
     <groups>
       <run>
-        <include name="sanity"/>
         <include name="regression"/>
-        <include name="datadriven"/>
       </run>
     </groups>
     <classes>
-      <class name="testCases.TC001_LogInSuccess">
+      <class name="testCases.TC002_LogInFail">
         <methods>
-          <include name="Veiry_Login_Success"/>
+          <include name="Verify_Login_Fail"/>
           <include name="tearDown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- testCases.TC001_LogInSuccess -->
+      </class> <!-- testCases.TC002_LogInFail -->
     </classes>
   </test> <!-- Login(failed) -->
 </suite> <!-- Failed suite [Master Suite] -->

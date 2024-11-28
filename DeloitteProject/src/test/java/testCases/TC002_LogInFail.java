@@ -36,6 +36,7 @@ try {
 	{
 		logger.error("Test failed");
 		logger.debug("Debug log");
+		Assert.assertTrue(false);
 	}
 	
 	}

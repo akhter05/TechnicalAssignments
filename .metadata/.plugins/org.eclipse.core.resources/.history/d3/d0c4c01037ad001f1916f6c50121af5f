@@ -1,0 +1,15 @@
+package testCases;
+
+import org.testng.annotations.Test;
+
+import testBase.BaseClass;
+
+public class TC004_TestExceptionAdd extends BaseClass{
+	
+	@Test(groups="Regression")
+	public void Verify_add_favorite_food()
+	{
+		
+	}
+
+}

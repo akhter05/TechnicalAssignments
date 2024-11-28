@@ -72,6 +72,7 @@ public class TC003_LoginDataDriven extends BaseClass {
 
 		} catch (Exception e) {
 			Assert.fail();
+			logger.debug("Exception: " + e.getMessage());
 		}
 
 		logger.info("*****************Ending test TC003_LoginDataDriven*****************");

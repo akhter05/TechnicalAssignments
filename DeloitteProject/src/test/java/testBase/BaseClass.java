@@ -47,10 +47,9 @@ public class BaseClass {
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			logger.debug("Test failed");
 		}
 
-		logger = LogManager.getLogger(this.getClass());
+		logger = LogManager.getLogger(BaseClass.class);
 
 		if (prop.getProperty("RunEnvironment").equalsIgnoreCase("remoteGrid")) {
 			DesiredCapabilities cap = new DesiredCapabilities();
@@ -113,7 +112,6 @@ public class BaseClass {
 		}
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
 		driver.get(prop.getProperty("appURL"));
 		driver.manage().window().maximize();
 

@@ -1,27 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-28T12:05:36 AEST" name="Master Suite" finished-at="2024-11-28T12:07:04 AEST" duration-ms="87431">
+  <suite started-at="2024-11-28T15:54:38 AEST" name="Master Suite" finished-at="2024-11-28T15:55:12 AEST" duration-ms="33920">
     <groups>
-      <group name="datadriven">
-        <method signature="TC003_LoginDataDriven.Verify_LoginByDataDriven(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC003_LoginDataDriven@1c1bbc4e]" name="Verify_LoginByDataDriven" class="testCases.TC003_LoginDataDriven"/>
-      </group> <!-- datadriven -->
       <group name="regression">
-        <method signature="TC002_LogInFail.Verify_Login_Fail()[pri:0, instance:testCases.TC002_LogInFail@ba2f4ec]" name="Verify_Login_Fail" class="testCases.TC002_LogInFail"/>
+        <method signature="TC002_LogInFail.Verify_Login_Fail()[pri:0, instance:testCases.TC002_LogInFail@55fe41ea]" name="Verify_Login_Fail" class="testCases.TC002_LogInFail"/>
+        <method signature="TC004_TestException_TC2.Verify_add_favorite_food()[pri:0, instance:testCases.TC004_TestException_TC2@1ce24091]" name="Verify_add_favorite_food" class="testCases.TC004_TestException_TC2"/>
       </group> <!-- regression -->
-      <group name="sanity">
-        <method signature="TC001_LogInSuccess.Veiry_Login_Success()[pri:0, instance:testCases.TC001_LogInSuccess@302552ec]" name="Veiry_Login_Success" class="testCases.TC001_LogInSuccess"/>
-      </group> <!-- sanity -->
       <group name="master">
-        <method signature="TC001_LogInSuccess.Veiry_Login_Success()[pri:0, instance:testCases.TC001_LogInSuccess@302552ec]" name="Veiry_Login_Success" class="testCases.TC001_LogInSuccess"/>
-        <method signature="TC002_LogInFail.Verify_Login_Fail()[pri:0, instance:testCases.TC002_LogInFail@ba2f4ec]" name="Verify_Login_Fail" class="testCases.TC002_LogInFail"/>
-        <method signature="TC003_LoginDataDriven.Verify_LoginByDataDriven(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC003_LoginDataDriven@1c1bbc4e]" name="Verify_LoginByDataDriven" class="testCases.TC003_LoginDataDriven"/>
+        <method signature="TC002_LogInFail.Verify_Login_Fail()[pri:0, instance:testCases.TC002_LogInFail@55fe41ea]" name="Verify_Login_Fail" class="testCases.TC002_LogInFail"/>
       </group> <!-- master -->
     </groups>
-    <test started-at="2024-11-28T12:05:36 AEST" name="Login" finished-at="2024-11-28T12:07:04 AEST" duration-ms="87431">
-      <class name="testCases.TC001_LogInSuccess">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_LogInSuccess@302552ec]" started-at="2024-11-28T12:05:37 AEST" name="setup" finished-at="2024-11-28T12:05:46 AEST" duration-ms="9360" status="PASS">
+    <test started-at="2024-11-28T15:54:38 AEST" name="Login" finished-at="2024-11-28T15:55:12 AEST" duration-ms="33920">
+      <class name="testCases.TC004_TestException_TC2">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC004_TestException_TC2@1ce24091]" started-at="2024-11-28T15:54:51 AEST" name="setup" finished-at="2024-11-28T15:54:55 AEST" duration-ms="4645" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +30,33 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Veiry_Login_Success()[pri:0, instance:testCases.TC001_LogInSuccess@302552ec]" started-at="2024-11-28T12:05:46 AEST" name="Veiry_Login_Success" finished-at="2024-11-28T12:06:00 AEST" duration-ms="13325" status="FAIL">
+        <test-method signature="Verify_add_favorite_food()[pri:0, instance:testCases.TC004_TestException_TC2@1ce24091]" started-at="2024-11-28T15:54:55 AEST" name="Verify_add_favorite_food" finished-at="2024-11-28T15:55:12 AEST" duration-ms="16633" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_add_favorite_food -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC004_TestException_TC2@1ce24091]" started-at="2024-11-28T15:55:12 AEST" name="tearDown" finished-at="2024-11-28T15:55:12 AEST" duration-ms="224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC004_TestException_TC2 -->
+      <class name="testCases.TC002_LogInFail">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_LogInFail@55fe41ea]" started-at="2024-11-28T15:54:39 AEST" name="setup" finished-at="2024-11-28T15:54:47 AEST" duration-ms="8270" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Verify_Login_Fail()[pri:0, instance:testCases.TC002_LogInFail@55fe41ea]" started-at="2024-11-28T15:54:47 AEST" name="Verify_Login_Fail" finished-at="2024-11-28T15:54:50 AEST" duration-ms="2754" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -48,7 +67,7 @@ at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1578)
 at org.testng.Assert.assertTrue(Assert.java:57)
 at org.testng.Assert.assertTrue(Assert.java:67)
-at testCases.TC001_LogInSuccess.Veiry_Login_Success(TC001_LogInSuccess.java:36)
+at testCases.TC002_LogInFail.Verify_Login_Fail(TC002_LogInFail.java:39)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -80,182 +99,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Veiry_Login_Success -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC001_LogInSuccess@302552ec]" started-at="2024-11-28T12:06:00 AEST" name="tearDown" finished-at="2024-11-28T12:06:02 AEST" duration-ms="2113" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC001_LogInSuccess -->
-      <class name="testCases.TC002_LogInFail">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_LogInFail@ba2f4ec]" started-at="2024-11-28T12:06:02 AEST" name="setup" finished-at="2024-11-28T12:06:06 AEST" duration-ms="3608" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Windows]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="Verify_Login_Fail()[pri:0, instance:testCases.TC002_LogInFail@ba2f4ec]" started-at="2024-11-28T12:06:06 AEST" name="Verify_Login_Fail" finished-at="2024-11-28T12:06:07 AEST" duration-ms="1834" status="PASS">
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- Verify_Login_Fail -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC002_LogInFail@ba2f4ec]" started-at="2024-11-28T12:06:07 AEST" name="tearDown" finished-at="2024-11-28T12:06:08 AEST" duration-ms="331" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC002_LogInFail@55fe41ea]" started-at="2024-11-28T15:54:50 AEST" name="tearDown" finished-at="2024-11-28T15:54:51 AEST" duration-ms="386" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.TC002_LogInFail -->
-      <class name="testCases.TC003_LoginDataDriven">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC003_LoginDataDriven@1c1bbc4e]" started-at="2024-11-28T12:06:08 AEST" name="setup" finished-at="2024-11-28T12:06:11 AEST" duration-ms="3053" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Windows]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="Verify_LoginByDataDriven(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC003_LoginDataDriven@1c1bbc4e]" started-at="2024-11-28T12:06:13 AEST" name="Verify_LoginByDataDriven" data-provider="LoginData" finished-at="2024-11-28T12:06:16 AEST" duration-ms="3148" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[student]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Password123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Valid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_LoginByDataDriven -->
-        <test-method signature="Verify_LoginByDataDriven(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC003_LoginDataDriven@1c1bbc4e]" started-at="2024-11-28T12:06:16 AEST" name="Verify_LoginByDataDriven" data-provider="LoginData" finished-at="2024-11-28T12:06:27 AEST" duration-ms="10675" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[professor]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Password123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Invalid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_LoginByDataDriven -->
-        <test-method signature="Verify_LoginByDataDriven(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC003_LoginDataDriven@1c1bbc4e]" started-at="2024-11-28T12:06:27 AEST" name="Verify_LoginByDataDriven" data-provider="LoginData" finished-at="2024-11-28T12:06:39 AEST" duration-ms="11739" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[teacher]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Password123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Invalid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_LoginByDataDriven -->
-        <test-method signature="Verify_LoginByDataDriven(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC003_LoginDataDriven@1c1bbc4e]" started-at="2024-11-28T12:06:39 AEST" name="Verify_LoginByDataDriven" data-provider="LoginData" finished-at="2024-11-28T12:06:41 AEST" duration-ms="2436" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[student]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Password123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Valid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_LoginByDataDriven -->
-        <test-method signature="Verify_LoginByDataDriven(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC003_LoginDataDriven@1c1bbc4e]" started-at="2024-11-28T12:06:41 AEST" name="Verify_LoginByDataDriven" data-provider="LoginData" finished-at="2024-11-28T12:06:52 AEST" duration-ms="10571" status="PASS">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Password123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Invalid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_LoginByDataDriven -->
-        <test-method signature="Verify_LoginByDataDriven(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC003_LoginDataDriven@1c1bbc4e]" started-at="2024-11-28T12:06:52 AEST" name="Verify_LoginByDataDriven" data-provider="LoginData" finished-at="2024-11-28T12:07:04 AEST" duration-ms="11846" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[student]]>
-              </value>
-            </param>
-            <param index="1">
-              <value is-null="true"/>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Invalid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_LoginByDataDriven -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC003_LoginDataDriven@1c1bbc4e]" started-at="2024-11-28T12:07:04 AEST" name="tearDown" finished-at="2024-11-28T12:07:04 AEST" duration-ms="267" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC003_LoginDataDriven -->
     </test> <!-- Login -->
   </suite> <!-- Master Suite -->
 </testng-results>

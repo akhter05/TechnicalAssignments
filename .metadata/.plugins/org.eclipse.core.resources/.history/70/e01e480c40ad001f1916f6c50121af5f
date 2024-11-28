@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration xmlns="https://logging.apache.org/xml/ns"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="
+                   https://logging.apache.org/xml/ns
+                   https://logging.apache.org/xml/ns/log4j-config-2.xsd">
+                   
+ <Properties>
+    <Property name="basepath" value="./logs"/>
+ </Properties>
+  
+  <Appenders>
+    <Console name="CONSOLE" target="SYSTEM_OUT">
+      <PatternLayout pattern="%p - %m%n"/>
+    </Console>
+    <RollingFile name="MAIN" fileName="${basepath}/main.log" filePattern="${basepath}/main-%d{yyyy-MM-dd}.log">
+      <PatternLayout pattern="%d [%t] %p %c - %m%n"/>
+      <SizeBasedTriggeringPolicy size="5000"></SizeBasedTriggeringPolicy>
+    </RollingFile>
+    <RollingFile name="DEBUGLOG" fileName="${basepath}/debug.log" filePattern="${basepath}/debug-%d{yyyy-MM-dd}.log">
+      <PatternLayout pattern="%d [%t] %p %c - %m%n"/>
+      <SizeBasedTriggeringPolicy size="5000"></SizeBasedTriggeringPolicy>
+    </RollingFile>
+  </Appenders>
+ <!-- TRACE < DEBUG< INFO< WARN< ERROR< FATAL --> 
+  <Loggers>
+    <Root level="DEBUG">
+      <AppenderRef ref="CONSOLE"/>
+      <AppenderRef ref="MAIN"/>
+    </Root>
+    <Logger name="org.example" level="DEBUG">
+      <AppenderRef ref="DEBUGLOG"/>
+    </Logger>
+  </Loggers>
+</Configuration>

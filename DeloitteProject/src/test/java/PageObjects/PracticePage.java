@@ -13,10 +13,19 @@ public class PracticePage extends BasePage{
 	
 	@FindBy (xpath = "/html/body/div/div/section/div/div/article/div[2]/div[1]/div[1]/p/a")
 	WebElement linkRestLogingPage;
+
+	@FindBy (xpath = "//a[normalize-space()='Test Exceptions']")
+	WebElement textExceptionLink;
 	
 	public void clickTestLoginPage()
 	{
 		linkRestLogingPage.click();
+		
+	}
+	
+	public void clickTestExceptionLink()
+	{
+		textExceptionLink.click();
 		
 	}
 
