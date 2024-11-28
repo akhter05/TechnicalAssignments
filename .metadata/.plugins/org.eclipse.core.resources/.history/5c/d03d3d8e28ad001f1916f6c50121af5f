@@ -1,0 +1,6 @@
+RunEnvironment=local
+#RunEnvironment=remotegrid
+appURL=https://practicetestautomation.com/
+userName=studen
+#userName=student
+pwd=Password123

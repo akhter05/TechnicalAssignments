@@ -1,0 +1,8 @@
+#For remote run the Grid first using command java -jar selenium-server-4.27.0.jar standalone
+#RunEnvironment=remoteGrid
+RunEnvironment=local
+appURL=https://practicetestautomation.com/
+appURLRemote=http://192.168.1.8:4444/wd/hub
+userName=studen
+#userName=student
+pwd=Password123

@@ -20,7 +20,7 @@ import testBase.BaseClass;
 
 public class TC003_LoginDataDriven extends BaseClass {
 
-	@Test(dataProvider = "LoginData", dataProviderClass = DataProviders.class)
+	@Test(groups={"datadriven","master"}, dataProvider = "LoginData", dataProviderClass = DataProviders.class)
 	public void Verify_LoginByDataDriven(String userName, String pwd, String result) {
 		logger.info("***********Starting TC003_LoginDataDriven ************");
 

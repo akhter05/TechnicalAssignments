@@ -17,19 +17,19 @@
       <PatternLayout pattern="%d [%t] %p %c - %m%n"/>
       <SizeBasedTriggeringPolicy size="5000"></SizeBasedTriggeringPolicy>
     </RollingFile>
-    <RollingFile name="DEBUG_LOG" fileName="${basepath}/debug.log" filePattern="${basepath}/debug-%d{yyyy-MM-dd}.log">
+    <RollingFile name="DEBUGLOG" fileName="${basepath}/debug.log" filePattern="${basepath}/debug-%d{yyyy-MM-dd}.log">
       <PatternLayout pattern="%d [%t] %p %c - %m%n"/>
       <SizeBasedTriggeringPolicy size="5000"></SizeBasedTriggeringPolicy>
     </RollingFile>
   </Appenders>
-  
+ <!-- TRACE < DEBUG< INFO< WARN< ERROR< FATAL --> 
   <Loggers>
     <Root level="INFO">
       <AppenderRef ref="CONSOLE"/>
       <AppenderRef ref="MAIN"/>
     </Root>
     <Logger name="org.example" level="DEBUG">
-      <AppenderRef ref="DEBUG_LOG"/>
+      <AppenderRef ref="DEBUGLOG"/>
     </Logger>
   </Loggers>
 </Configuration>
