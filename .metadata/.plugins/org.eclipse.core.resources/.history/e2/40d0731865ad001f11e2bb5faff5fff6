@@ -1,0 +1,45 @@
+2024-11-26 20:25:53,025 [main] INFO testCases.TC001_LogInSuccess - ***********Starting TC001_LogInSuccess ************
+2024-11-26 20:25:55,045 [main] INFO testCases.TC001_LogInSuccess - Clicked on Practice Menu
+2024-11-26 20:25:55,514 [main] INFO testCases.TC001_LogInSuccess - Clicked on Test Login link
+2024-11-26 20:25:56,928 [main] INFO testCases.TC001_LogInSuccess - Entered username and pwd then clicked submit button
+2024-11-26 20:25:57,108 [main] INFO testCases.TC001_LogInSuccess - ***********Ending TC001_LogInSuccess ************
+2024-11-26 20:30:48,150 [main] INFO testCases.TC001_LogInSuccess - ***********Starting TC001_LogInSuccess ************
+2024-11-26 20:30:49,168 [main] INFO testCases.TC001_LogInSuccess - Clicked on Practice Menu
+2024-11-26 20:30:49,902 [main] INFO testCases.TC001_LogInSuccess - Clicked on Test Login link
+2024-11-26 20:30:51,021 [main] INFO testCases.TC001_LogInSuccess - Entered username and pwd then clicked submit button
+2024-11-26 20:30:51,068 [main] INFO testCases.TC001_LogInSuccess - ***********Ending TC001_LogInSuccess ************
+2024-11-26 20:38:11,359 [main] INFO testCases.TC001_LogInSuccess - ***********Starting TC001_LogInSuccess ************
+2024-11-26 20:38:14,015 [main] INFO testCases.TC001_LogInSuccess - Clicked on Practice Menu
+2024-11-26 20:38:14,551 [main] INFO testCases.TC001_LogInSuccess - Clicked on Test Login link
+2024-11-26 20:38:15,662 [main] INFO testCases.TC001_LogInSuccess - Entered username and pwd then clicked submit button
+2024-11-26 20:38:15,719 [main] INFO testCases.TC001_LogInSuccess - ***********Ending TC001_LogInSuccess ************
+2024-11-26 20:39:28,591 [main] INFO testCases.TC001_LogInSuccess - ***********Starting TC001_LogInSuccess ************
+2024-11-26 20:39:29,238 [main] INFO testCases.TC001_LogInSuccess - Clicked on Practice Menu
+2024-11-26 20:39:29,792 [main] INFO testCases.TC001_LogInSuccess - Clicked on Test Login link
+2024-11-26 20:39:30,829 [main] INFO testCases.TC001_LogInSuccess - Entered username and pwd then clicked submit button
+2024-11-26 20:39:30,892 [main] INFO testCases.TC001_LogInSuccess - ***********Ending TC001_LogInSuccess ************
+2024-11-26 21:15:54,282 [main] INFO testCases.TC001_LogInSuccess - ***********Starting TC001_LogInSuccess ************
+2024-11-26 21:15:54,921 [main] INFO testCases.TC001_LogInSuccess - Clicked on Practice Menu
+2024-11-26 21:15:55,572 [main] INFO testCases.TC001_LogInSuccess - Clicked on Test Login link
+2024-11-26 21:15:58,003 [main] INFO testCases.TC001_LogInSuccess - Entered username and pwd then clicked submit button
+2024-11-26 21:15:58,153 [main] INFO testCases.TC001_LogInSuccess - ***********Ending TC001_LogInSuccess ************
+2024-11-26 21:16:15,759 [main] INFO testCases.TC001_LogInSuccess - ***********Starting TC001_LogInSuccess ************
+2024-11-26 21:16:16,698 [main] INFO testCases.TC001_LogInSuccess - Clicked on Practice Menu
+2024-11-26 21:16:17,639 [main] INFO testCases.TC001_LogInSuccess - Clicked on Test Login link
+2024-11-26 21:16:19,496 [main] INFO testCases.TC001_LogInSuccess - Entered username and pwd then clicked submit button
+2024-11-26 21:16:19,592 [main] INFO testCases.TC001_LogInSuccess - ***********Ending TC001_LogInSuccess ************
+2024-11-26 21:16:35,496 [main] INFO testCases.TC001_LogInSuccess - ***********Starting TC001_LogInSuccess ************
+2024-11-26 21:16:36,208 [main] INFO testCases.TC001_LogInSuccess - Clicked on Practice Menu
+2024-11-26 21:16:36,811 [main] INFO testCases.TC001_LogInSuccess - Clicked on Test Login link
+2024-11-26 21:16:37,847 [main] INFO testCases.TC001_LogInSuccess - Entered username and pwd then clicked submit button
+2024-11-26 21:16:37,905 [main] INFO testCases.TC001_LogInSuccess - ***********Ending TC001_LogInSuccess ************
+2024-11-26 21:19:26,908 [TestNG-tests-1] INFO testCases.TC001_LogInSuccess - ***********Starting TC001_LogInSuccess ************
+2024-11-26 21:19:30,330 [TestNG-tests-1] INFO testCases.TC001_LogInSuccess - Clicked on Practice Menu
+2024-11-26 21:19:40,332 [TestNG-tests-1] INFO testCases.TC001_LogInSuccess - Clicked on Test Login link
+2024-11-26 21:19:42,418 [TestNG-tests-1] INFO testCases.TC001_LogInSuccess - Entered username and pwd then clicked submit button
+2024-11-26 21:19:42,562 [TestNG-tests-1] INFO testCases.TC001_LogInSuccess - ***********Ending TC001_LogInSuccess ************
+2024-11-26 21:19:45,651 [TestNG-tests-2] INFO testCases.TC001_LogInSuccess - ***********Starting TC001_LogInSuccess ************
+2024-11-26 21:19:46,252 [TestNG-tests-2] INFO testCases.TC001_LogInSuccess - Clicked on Practice Menu
+2024-11-26 21:19:46,860 [TestNG-tests-2] INFO testCases.TC001_LogInSuccess - Clicked on Test Login link
+2024-11-26 21:19:47,929 [TestNG-tests-2] INFO testCases.TC001_LogInSuccess - Entered username and pwd then clicked submit button
+2024-11-26 21:19:47,978 [TestNG-tests-2] INFO testCases.TC001_LogInSuccess - ***********Ending TC001_LogInSuccess ************

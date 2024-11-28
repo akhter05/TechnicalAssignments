@@ -1,0 +1,30 @@
+package testCases;
+
+import PageObjects.CoursesPage;
+import PageObjects.HomePage;
+import PageObjects.SubscriptionBundlePage;
+import testBase.BaseClass;
+
+public class TC006_CoursesSubscriptionRadioButtons extends BaseClass{
+
+	@Test(groups={"regression","master"})
+	public void Verify_SubscriptionPage_RadioButtons()
+	{
+		
+		logger.info("***********Starting TC005_PrivacyPolicyLink ************");
+
+		try {
+			HomePage hp = new HomePage(driver);
+			hp.clickCoursesManu();
+			CoursesPage cp=new CoursesPage(driver);
+			cp.clicksubscriptionBundleLink();
+			String mainWindow =cp.swicthToNewBrowserTab();
+			SubscriptionBundlePage sbp= new SubscriptionBundlePage(driver);
+			sbp.clickSixMonthPricingPlanRadioButton();
+			sbp.clickMonthlyPricingPlanRadioButton();
+			
+		}catch(Exception e)
+		{}
+		
+	}
+}

@@ -1,0 +1,29 @@
+2024-11-28 15:09:45,769 [main] ERROR testBase.BaseClass - Test failed
+2024-11-28 15:09:50,171 [main] INFO testBase.BaseClass - ***********Starting TC004_TestExceptionAdd ************
+2024-11-28 15:09:50,726 [main] INFO testBase.BaseClass - Clicked on Practice Menu
+2024-11-28 15:52:32,950 [main] INFO testBase.BaseClass - *****************Starting test TC002_LogInFail*****************
+2024-11-28 15:52:34,135 [main] INFO testBase.BaseClass - Clicked on Practice Menu
+2024-11-28 15:52:34,850 [main] INFO testBase.BaseClass - Clicked on Test Login link
+2024-11-28 15:52:35,243 [main] INFO testBase.BaseClass - Entered invalid username and pwd then clicked submit button
+2024-11-28 15:52:35,281 [main] ERROR testBase.BaseClass - Test failed
+2024-11-28 15:52:35,282 [main] DEBUG testBase.BaseClass - Debug log
+2024-11-28 15:52:39,820 [main] INFO testBase.BaseClass - ***********Starting TC004_TestExceptionAdd ************
+2024-11-28 15:52:40,524 [main] INFO testBase.BaseClass - Clicked on Practice Menu
+2024-11-28 15:52:56,441 [main] DEBUG testBase.BaseClass - Exception: element not interactable
+  (Session info: chrome=131.0.6778.86)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fe7d9ed7f65ba8f5c58f36deb2316de5, clickElement {id=f.441F7691F4305319BCEF3131132B15FE.d.27A3020819A3209E55DE542511FEDB23.e.58}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\akhte\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51002}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51002/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (fe7d9ed7f65ba8f5c58f36deb2316de5)] -> xpath: //div[@id="row2"]//button[@name="Save"][normalize-space()="Save"]]
+Session ID: fe7d9ed7f65ba8f5c58f36deb2316de5
+2024-11-28 15:54:47,682 [main] INFO testBase.BaseClass - *****************Starting test TC002_LogInFail*****************
+2024-11-28 15:54:49,191 [main] INFO testBase.BaseClass - Clicked on Practice Menu
+2024-11-28 15:54:49,922 [main] INFO testBase.BaseClass - Clicked on Test Login link
+2024-11-28 15:54:50,296 [main] INFO testBase.BaseClass - Entered invalid username and pwd then clicked submit button
+2024-11-28 15:54:50,348 [main] ERROR testBase.BaseClass - Test failed
+2024-11-28 15:54:50,348 [main] DEBUG testBase.BaseClass - Debug log
+2024-11-28 15:54:55,996 [main] INFO testBase.BaseClass - ***********Starting TC004_TestExceptionAdd ************
+2024-11-28 15:54:56,680 [main] INFO testBase.BaseClass - Clicked on Practice Menu
+2024-11-28 15:55:12,625 [main] INFO testBase.BaseClass - ***********Ending TC004_TestExceptionAdd************

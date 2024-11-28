@@ -1,0 +1,14 @@
+package testCases;
+
+import testBase.BaseClass;
+
+public class TC006_CoursesSubscriptionRadioButtons extends BaseClass{
+
+	@Test(groups={"regression","master"})
+	public void Verify_SubscriptionPage_RadioButtons()
+	{
+		
+		
+		
+	}
+}

@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-28T15:54:38 AEST" name="Master Suite" finished-at="2024-11-28T15:55:12 AEST" duration-ms="33920">
+  <suite started-at="2024-11-28T20:32:39 AEST" name="Master Suite" finished-at="2024-11-28T20:33:22 AEST" duration-ms="43177">
     <groups>
       <group name="regression">
-        <method signature="TC002_LogInFail.Verify_Login_Fail()[pri:0, instance:testCases.TC002_LogInFail@55fe41ea]" name="Verify_Login_Fail" class="testCases.TC002_LogInFail"/>
-        <method signature="TC004_TestException_TC2.Verify_add_favorite_food()[pri:0, instance:testCases.TC004_TestException_TC2@1ce24091]" name="Verify_add_favorite_food" class="testCases.TC004_TestException_TC2"/>
+        <method signature="TC002_LogInFail.Verify_Login_Fail()[pri:0, instance:testCases.TC002_LogInFail@24269709]" name="Verify_Login_Fail" class="testCases.TC002_LogInFail"/>
+        <method signature="TC004_TestException_ElementNotInteractableException.Verify_ElementNotInteractableException()[pri:0, instance:testCases.TC004_TestException_ElementNotInteractableException@3a52dba3]" name="Verify_ElementNotInteractableException" class="testCases.TC004_TestException_ElementNotInteractableException"/>
+        <method signature="TC005_PrivacyPolicyLink.Verify_PrivacyPolicyLink()[pri:0, instance:testCases.TC005_PrivacyPolicyLink@24aed80c]" name="Verify_PrivacyPolicyLink" class="testCases.TC005_PrivacyPolicyLink"/>
+        <method signature="TC006_CoursesSubscriptionRadioButtons.Verify_SubscriptionPage_RadioButtons()[pri:0, instance:testCases.TC006_CoursesSubscriptionRadioButtons@ba2f4ec]" name="Verify_SubscriptionPage_RadioButtons" class="testCases.TC006_CoursesSubscriptionRadioButtons"/>
       </group> <!-- regression -->
       <group name="master">
-        <method signature="TC002_LogInFail.Verify_Login_Fail()[pri:0, instance:testCases.TC002_LogInFail@55fe41ea]" name="Verify_Login_Fail" class="testCases.TC002_LogInFail"/>
+        <method signature="TC002_LogInFail.Verify_Login_Fail()[pri:0, instance:testCases.TC002_LogInFail@24269709]" name="Verify_Login_Fail" class="testCases.TC002_LogInFail"/>
+        <method signature="TC004_TestException_ElementNotInteractableException.Verify_ElementNotInteractableException()[pri:0, instance:testCases.TC004_TestException_ElementNotInteractableException@3a52dba3]" name="Verify_ElementNotInteractableException" class="testCases.TC004_TestException_ElementNotInteractableException"/>
+        <method signature="TC005_PrivacyPolicyLink.Verify_PrivacyPolicyLink()[pri:0, instance:testCases.TC005_PrivacyPolicyLink@24aed80c]" name="Verify_PrivacyPolicyLink" class="testCases.TC005_PrivacyPolicyLink"/>
+        <method signature="TC006_CoursesSubscriptionRadioButtons.Verify_SubscriptionPage_RadioButtons()[pri:0, instance:testCases.TC006_CoursesSubscriptionRadioButtons@ba2f4ec]" name="Verify_SubscriptionPage_RadioButtons" class="testCases.TC006_CoursesSubscriptionRadioButtons"/>
       </group> <!-- master -->
     </groups>
-    <test started-at="2024-11-28T15:54:38 AEST" name="Login" finished-at="2024-11-28T15:55:12 AEST" duration-ms="33920">
-      <class name="testCases.TC004_TestException_TC2">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC004_TestException_TC2@1ce24091]" started-at="2024-11-28T15:54:51 AEST" name="setup" finished-at="2024-11-28T15:54:55 AEST" duration-ms="4645" status="PASS">
+    <test started-at="2024-11-28T20:32:39 AEST" name="Login" finished-at="2024-11-28T20:33:22 AEST" duration-ms="43177">
+      <class name="testCases.TC005_PrivacyPolicyLink">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC005_PrivacyPolicyLink@24aed80c]" started-at="2024-11-28T20:32:58 AEST" name="setup" finished-at="2024-11-28T20:33:01 AEST" duration-ms="3003" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,17 +35,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Verify_add_favorite_food()[pri:0, instance:testCases.TC004_TestException_TC2@1ce24091]" started-at="2024-11-28T15:54:55 AEST" name="Verify_add_favorite_food" finished-at="2024-11-28T15:55:12 AEST" duration-ms="16633" status="PASS">
+        <test-method signature="Verify_PrivacyPolicyLink()[pri:0, instance:testCases.TC005_PrivacyPolicyLink@24aed80c]" started-at="2024-11-28T20:33:01 AEST" name="Verify_PrivacyPolicyLink" finished-at="2024-11-28T20:33:01 AEST" duration-ms="814" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_add_favorite_food -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC004_TestException_TC2@1ce24091]" started-at="2024-11-28T15:55:12 AEST" name="tearDown" finished-at="2024-11-28T15:55:12 AEST" duration-ms="224" status="PASS">
+        </test-method> <!-- Verify_PrivacyPolicyLink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC005_PrivacyPolicyLink@24aed80c]" started-at="2024-11-28T20:33:01 AEST" name="tearDown" finished-at="2024-11-28T20:33:02 AEST" duration-ms="180" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC004_TestException_TC2 -->
-      <class name="testCases.TC002_LogInFail">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_LogInFail@55fe41ea]" started-at="2024-11-28T15:54:39 AEST" name="setup" finished-at="2024-11-28T15:54:47 AEST" duration-ms="8270" status="PASS">
+      </class> <!-- testCases.TC005_PrivacyPolicyLink -->
+      <class name="testCases.TC004_TestException_ElementNotInteractableException">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC004_TestException_ElementNotInteractableException@3a52dba3]" started-at="2024-11-28T20:33:02 AEST" name="setup" finished-at="2024-11-28T20:33:04 AEST" duration-ms="2916" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -56,55 +61,67 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Verify_Login_Fail()[pri:0, instance:testCases.TC002_LogInFail@55fe41ea]" started-at="2024-11-28T15:54:47 AEST" name="Verify_Login_Fail" finished-at="2024-11-28T15:54:50 AEST" duration-ms="2754" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at org.testng.Assert.assertTrue(Assert.java:67)
-at testCases.TC002_LogInFail.Verify_Login_Fail(TC002_LogInFail.java:39)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="Verify_ElementNotInteractableException()[pri:0, instance:testCases.TC004_TestException_ElementNotInteractableException@3a52dba3]" started-at="2024-11-28T20:33:04 AEST" name="Verify_ElementNotInteractableException" finished-at="2024-11-28T20:33:21 AEST" duration-ms="16574" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_ElementNotInteractableException -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC004_TestException_ElementNotInteractableException@3a52dba3]" started-at="2024-11-28T20:33:21 AEST" name="tearDown" finished-at="2024-11-28T20:33:22 AEST" duration-ms="624" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC004_TestException_ElementNotInteractableException -->
+      <class name="testCases.TC002_LogInFail">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_LogInFail@24269709]" started-at="2024-11-28T20:32:53 AEST" name="setup" finished-at="2024-11-28T20:32:56 AEST" duration-ms="3133" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Verify_Login_Fail()[pri:0, instance:testCases.TC002_LogInFail@24269709]" started-at="2024-11-28T20:32:56 AEST" name="Verify_Login_Fail" finished-at="2024-11-28T20:32:57 AEST" duration-ms="1494" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_Login_Fail -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC002_LogInFail@55fe41ea]" started-at="2024-11-28T15:54:50 AEST" name="tearDown" finished-at="2024-11-28T15:54:51 AEST" duration-ms="386" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC002_LogInFail@24269709]" started-at="2024-11-28T20:32:57 AEST" name="tearDown" finished-at="2024-11-28T20:32:58 AEST" duration-ms="121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.TC002_LogInFail -->
+      <class name="testCases.TC006_CoursesSubscriptionRadioButtons">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC006_CoursesSubscriptionRadioButtons@ba2f4ec]" started-at="2024-11-28T20:32:39 AEST" name="setup" finished-at="2024-11-28T20:32:47 AEST" duration-ms="7597" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Verify_SubscriptionPage_RadioButtons()[pri:0, instance:testCases.TC006_CoursesSubscriptionRadioButtons@ba2f4ec]" started-at="2024-11-28T20:32:47 AEST" name="Verify_SubscriptionPage_RadioButtons" finished-at="2024-11-28T20:32:52 AEST" duration-ms="5633" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_SubscriptionPage_RadioButtons -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC006_CoursesSubscriptionRadioButtons@ba2f4ec]" started-at="2024-11-28T20:32:53 AEST" name="tearDown" finished-at="2024-11-28T20:32:53 AEST" duration-ms="245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC006_CoursesSubscriptionRadioButtons -->
     </test> <!-- Login -->
   </suite> <!-- Master Suite -->
 </testng-results>

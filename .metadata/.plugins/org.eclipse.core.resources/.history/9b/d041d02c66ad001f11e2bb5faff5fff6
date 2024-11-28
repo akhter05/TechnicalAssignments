@@ -1,0 +1,15 @@
+package testCases;
+
+import org.testng.annotations.Test;
+
+import testBase.BaseClass;
+
+public class TC005_PrivacyPolicyLink extends BaseClass{
+	
+	@Test(groups={"regression","master"})
+	public void Verify_PrivacyPolicyLink()
+	{
+		
+	}
+
+}

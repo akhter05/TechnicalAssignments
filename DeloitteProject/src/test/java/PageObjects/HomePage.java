@@ -8,16 +8,28 @@ public class HomePage extends BasePage {
 
 	public HomePage(WebDriver driver) {
 		super(driver);
-		
+
 	}
-	
-	@FindBy (xpath= "/html/body/div/div/header/div[3]/div[1]/div/div[2]/div/nav/ul/li[2]/a")
+
+	@FindBy(xpath = "/html/body/div/div/header/div[3]/div[1]/div/div[2]/div/nav/ul/li[2]/a")
 	WebElement practiceMenu;
-	
-	public void clickPracticeMenu()
-	{
+
+	@FindBy(xpath = "//a[normalize-space()='privacy policy']")
+	WebElement privacyPolicyLink;
+
+	@FindBy(xpath = "//a[normalize-space()='Courses']")
+	WebElement coursesMenu;
+
+	public void clickPracticeMenu() {
 		practiceMenu.click();
 	}
-	
+
+	public void clickPrivacyPolicyLink() {
+		privacyPolicyLink.click();
+	}
+
+	public void clickCoursesManu() {
+		coursesMenu.click();
+	}
 
 }

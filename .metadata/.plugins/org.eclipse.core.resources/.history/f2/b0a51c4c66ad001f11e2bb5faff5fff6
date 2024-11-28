@@ -1,0 +1,21 @@
+package testCases;
+
+import org.testng.annotations.Test;
+
+import PageObjects.HomePage;
+import testBase.BaseClass;
+
+public class TC005_PrivacyPolicyLink extends BaseClass{
+	
+	@Test(groups={"regression","master"})
+	public void Verify_PrivacyPolicyLink()
+	{
+		logger.info("***********Starting TC005_PrivacyPolicyLink ************");
+
+		try {
+			HomePage hp = new HomePage(driver);
+			hp.clickPracticeMenu();
+			logger.info("Clicked on Practice Menu");
+	}
+
+}
