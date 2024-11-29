@@ -1,0 +1,12 @@
+package testCases;
+
+import testBase.BaseClass;
+
+public class TC007_ContactFormValidation extends BaseClass{
+
+	@Test(groups={"regression","master"})
+	public void verify_ContactPage_Fields()
+	{
+		
+	}
+}

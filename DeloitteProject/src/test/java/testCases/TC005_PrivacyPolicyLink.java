@@ -21,7 +21,6 @@ public class TC005_PrivacyPolicyLink extends BaseClass {
 			PrivacyPolicyPage prip = new PrivacyPolicyPage(driver);
 
 			if (prip.isPrivacyPolicayHeadingDisplayed()) {
-				driver.close();
 				hp.swicthBackToMainBrowserTab(mainwindowhandle);
 				Assert.assertTrue(true);
 			} else {

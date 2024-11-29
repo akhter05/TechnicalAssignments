@@ -20,6 +20,9 @@ public class HomePage extends BasePage {
 	@FindBy(xpath = "//a[normalize-space()='Courses']")
 	WebElement coursesMenu;
 
+	@FindBy(xpath = "//a[normalize-space()='Contact']")
+	WebElement contactMenu;
+
 	public void clickPracticeMenu() {
 		practiceMenu.click();
 	}
@@ -30,6 +33,10 @@ public class HomePage extends BasePage {
 
 	public void clickCoursesManu() {
 		coursesMenu.click();
+	}
+
+	public void clickContactManu() {
+		contactMenu.click();
 	}
 
 }

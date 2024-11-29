@@ -146,15 +146,4 @@ public class BaseClass {
 		return generatedNumber;
 	}
 
-	public static HashMap<Integer, String> storeValuesInHashMap(ArrayList<String> values) {
-
-		HashMap<Integer, String> map = new HashMap<>();
-		// Loop through each value in the ArrayList
-		for (int i = 0; i < values.size(); i++) {
-			map.put(i, values.get(i)); // Use i as the sequential key starting from 0
-		}
-		// Return the populated HashMap
-		return map;
-	}
-
 }

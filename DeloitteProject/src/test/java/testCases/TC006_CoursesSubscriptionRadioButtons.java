@@ -30,7 +30,6 @@ public class TC006_CoursesSubscriptionRadioButtons extends BaseClass {
 			if (sbp.isSixMonthPricingPlanRadioButtonSelected() == true) {
 				logger.error("Monthly radio button selected");
 			}
-			driver.close();
 			sbp.swicthBackToMainBrowserTab(mainWindow);
 			Assert.assertTrue(true);
 		} catch (Exception e) {
