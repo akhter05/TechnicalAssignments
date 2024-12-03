@@ -17,7 +17,7 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 echo 'Installing dependencies (e.g., in pom.xml)'
-                sh 'mvn clean install -DskipTests -f .\DeloitteProject\pom.xml'  
+                sh 'mvn clean install -DskipTests -f DeloitteProject/pom.xml'  
             }
         }
 
