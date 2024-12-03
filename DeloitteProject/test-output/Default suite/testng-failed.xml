@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.TC001_LogInSuccess">
+      <class name="testCases.TC008_DeloitteInterview">
         <methods>
-          <include name="Veiry_Login_Success"/>
+          <include name="Verify_First_Google_Link_deloitteInterview"/>
           <include name="tearDown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- testCases.TC001_LogInSuccess -->
+      </class> <!-- testCases.TC008_DeloitteInterview -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,35 @@
+package testCases;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import testBase.BaseClass;
+
+public class TC008_DeloitteInterview extends BaseClass
+{
+
+	@Test(groups="regression")
+	public void Verify_First_Google_Link_deloitteInterview()
+	{
+		logger.info("***********Starting TC001_LogInSuccess ************");
+
+		try {
+			driver.get("https://www.google.com/");
+			WebElement element = driver.findElement(By.id("APjFqb"));
+			element.sendKeys("I want to work for Deloitte");
+			WebElement button =driver.findElement(By.name("btnK"));
+			button.click();
+			WebElement link=driver.findElement(By.xpath("//h3[normalize-space()='Careers at Deloitte | Deloitte Australia']"));
+
+			
+			
+			
+			catch(Exception e)
+			{
+				
+			}
+		
+	}
+}}

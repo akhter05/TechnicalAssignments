@@ -1,0 +1,25 @@
+package testCases;
+
+import org.testng.annotations.Test;
+
+import testBase.BaseClass;
+
+public class TC008_DeloitteInterview extends BaseClass
+{
+
+	@Test(groups="regression")
+	public void Verify_First_Google_Link_deloitteInterview
+	{
+		logger.info("***********Starting TC001_LogInSuccess ************");
+
+		try {
+			
+			
+			catch(Exception e)
+			{
+				
+			}
+		}
+		
+	}
+}

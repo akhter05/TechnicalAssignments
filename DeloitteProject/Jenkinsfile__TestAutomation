@@ -1,0 +1,64 @@
+pipeline {
+    agent any  // This specifies where the job will run (can be a specific agent or any available agent)
+
+    tools {
+        // Define the JDK and Maven tools
+        jdk 'JDK_21'   // JDK name as defined in Jenkins tool configuration
+        maven 'Maven_3.9.9'  // Maven version as defined in Jenkins tool configuration
+    }
+
+    environment {
+        // You can define additional environment variables if needed
+        //JAVA_HOME = tool name: 'JDK_11', type: 'JDK'
+        //MAVEN_HOME = tool name: 'Maven_3.6', type: 'Maven'
+        // Optional: define any project-specific environment variables
+        //PROJECT_NAME = 'MyJavaProject'
+    }
+
+    stages {
+        stage('Checkout Code') {
+            steps {
+                // Pull the latest code from the Git repository
+                git branch: 'main', url: 'https://github.com/akhter05/TechnicalAssignments.git'
+            }
+        }
+
+        stage('Install Dependencies') {
+            steps {
+                // If you're using Maven, install dependencies (e.g., in pom.xml)
+                sh 'mvn clean install -DskipTests'  // You can also adjust based on your needs
+            }
+        }
+
+        stage('Run Tests') {
+            steps {
+                // Run your TestNG tests using the grouping.xml file
+                sh 'mvn test -DsuiteXmlFile=DeloitteProject/grouping.xml'
+            }
+        }
+
+        stage('Publish TestNG Results') {
+            steps {
+                // Publish TestNG results to Jenkins
+                junit '**/target/test-*.xml'  // This assumes your TestNG results are stored in the target folder
+            }
+        }
+    }
+
+    post {
+        always {
+            // Archive all the test results, logs, or screenshots if needed
+            archiveArtifacts '**/target/*.html, **/target/*.log'  // Adjust based on your setup
+        }
+
+        success {
+            // Notify or perform actions on success
+            echo 'Tests passed successfully!'
+        }
+
+        failure {
+            // Notify or perform actions on failure
+            echo 'Tests failed.'
+        }
+    }
+}
