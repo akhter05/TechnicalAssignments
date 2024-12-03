@@ -9,28 +9,28 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                // Pull the latest code from the Git repository
+                echo 'Pulling the latest code from the Git repository'
                 git branch: 'master', url: 'https://github.com/akhter05/TechnicalAssignments.git'
             }
         }
 
         stage('Install Dependencies') {
             steps {
-                // If you're using Maven, install dependencies (e.g., in pom.xml)
-                sh 'mvn clean install -DskipTests'  
+                echo 'Installing dependencies (e.g., in pom.xml)'
+                sh 'mvn clean install -DskipTests -f .\DeloitteProject\pom.xml'  
             }
         }
 
         stage('Run Tests') {
             steps {
-                // Run your TestNG tests using the grouping.xml file
+                echo 'Running tests using the grouping.xml file'
                 sh 'mvn test -DsuiteXmlFile=DeloitteProject/grouping.xml'
             }
         }
 
         stage('Publish TestNG Results') {
             steps {
-                // Publish TestNG results to Jenkins
+                echo 'Publish TestNG results to Jenkins'
                 junit '**/target/test-*.xml'  // This assumes your TestNG results are stored in the target folder
             }
         }
@@ -38,17 +38,15 @@ pipeline {
 
     post {
         always {
-            // Archive all the test results, logs, or screenshots if needed
+            echo 'Archive all the test results, logs, or screenshots'
             archiveArtifacts '**/target/*.html, **/target/*.log'  // Adjust based on your setup
         }
 
         success {
-            // Notify or perform actions on success
             echo 'Tests passed successfully!'
         }
 
         failure {
-            // Notify or perform actions on failure
             echo 'Tests failed.'
         }
     }
