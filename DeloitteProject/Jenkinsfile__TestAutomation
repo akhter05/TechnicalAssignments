@@ -6,15 +6,6 @@ pipeline {
         jdk 'JDK_21'   // JDK name as defined in Jenkins tool configuration
         maven 'Maven_3.9.9'  // Maven version as defined in Jenkins tool configuration
     }
-
-    environment {
-        // You can define additional environment variables if needed
-        //JAVA_HOME = tool name: 'JDK_11', type: 'JDK'
-        //MAVEN_HOME = tool name: 'Maven_3.6', type: 'Maven'
-        // Optional: define any project-specific environment variables
-        //PROJECT_NAME = 'MyJavaProject'
-    }
-
     stages {
         stage('Checkout Code') {
             steps {
