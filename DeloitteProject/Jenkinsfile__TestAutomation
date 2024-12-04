@@ -10,6 +10,8 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 echo 'Pulling the latest code from the Git repository'
+				echo "JAVA_HOME is ${env.JAVA_HOME}"
+                echo "MAVEN_HOME is ${env.MAVEN_HOME}"
                 git branch: 'master', url: 'https://github.com/akhter05/TechnicalAssignments.git'
             }
         }
@@ -38,8 +40,8 @@ pipeline {
 
     post {
         always {
-            echo 'Archive all the test results, logs, or screenshots'
-            archiveArtifacts '**/target/*.html, **/target/*.log'  // Adjust based on your setup
+            archiveArtifacts '**/target/*.html, **/target/*.log'
+			echo 'Archive all the test results, logs, or screenshots'
         }
 
         success {
