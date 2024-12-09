@@ -29,19 +29,14 @@ pipeline {
                 sh 'mvn clean test -DsuiteXmlFile=DeloitteProject/grouping'
             }
         }
-
-        stage('Publish TestNG Results') {
-            steps {
-                echo 'Publish TestNG results to Jenkins'
-                junit '**/target/test-*.xml'  // This assumes your TestNG results are stored in the target folder
-            }
-        }
     }
 
     post {
         always {
             archiveArtifacts '**/target/*.html, **/target/*.log'
 			echo 'Archive all the test results, logs, or screenshots'
+            junit '**/target/test-*.xml'  // This assumes your TestNG results are stored in the target folder
+			echo 'Publish TestNG results to Jenkins'
         }
 
         success {
