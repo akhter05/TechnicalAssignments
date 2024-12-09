@@ -19,7 +19,7 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 echo 'Installing dependencies (e.g., in pom.xml)'
-                sh 'mvn clean install -DskipTests -f DeloitteProject/pom.xml -e -X'  
+                sh 'mvn clean install -DskipTests -f DeloitteProject/pom.xml -X'  
             }
         }
 
@@ -35,8 +35,8 @@ pipeline {
         always {
             archiveArtifacts '**/target/*.html, **/target/*.log'
 			echo 'Archive all the test results, logs, or screenshots'
-            junit '**/target/test-*.xml'  // This assumes your TestNG results are stored in the target folder
-			echo 'Publish TestNG results to Jenkins'
+            junit '**/target/surefire-reports/testng-results.xml'
+			echo 'Publishing TestNG results to Jenkins'
         }
 
         success {
