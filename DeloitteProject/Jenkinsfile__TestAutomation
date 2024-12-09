@@ -26,7 +26,7 @@ pipeline {
         stage('Run Tests') {
             steps {
                 echo 'Running tests using the grouping.xml file'
-                sh 'mvn test -DsuiteXmlFile=DeloitteProject/grouping'
+                sh 'mvn clean test -DsuiteXmlFile=DeloitteProject/grouping'
             }
         }
 
