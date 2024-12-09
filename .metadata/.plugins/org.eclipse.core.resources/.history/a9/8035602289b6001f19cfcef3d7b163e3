@@ -36,7 +36,11 @@
 							grouping.xml</suiteXmlFile>
 					</suiteXmlFiles>
 					<reportFormat>xml</reportFormat>
-					<useFile>false</useFile>
+					<redirectTestOutputToFile>false</redirectTestOutputToFile> <!--
+					Output to console -->
+					<useFile>false</useFile> <!-- Don't redirect output to files -->
+					<forkCount>1</forkCount>
+					<reuseForks>false</reuseForks>
 					<testFailureIgnore>false</testFailureIgnore> <!-- Don't
 					ignore failures -->
 				</configuration>

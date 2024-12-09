@@ -35,8 +35,9 @@ pipeline {
         always {
             archiveArtifacts '**/target/*.html, **/target/*.log'
 			echo 'Archive all the test results, logs, or screenshots'
-			echo 'Publishing results to Jenkins from test-output'
-			junit '**/DeloitteProject/target/surefire-reports/*.xml' // Publish JUnit test results
+			echo 'Publishing results'
+			echo "The value of project.build.directory is: ${env.WORKSPACE}"
+			junit '**/target/surefire-reports/*.xml' // Publish JUnit test results
         }
 
         success {
