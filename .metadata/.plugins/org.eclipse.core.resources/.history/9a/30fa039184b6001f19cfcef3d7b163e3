@@ -13,10 +13,6 @@
 	<!-- <listeners>
 		<listener class-name="Utilities.ExtentReportUtility" />
 	</listeners>  -->
-	
-	<listeners>
-        <listener class-name="org.testng.reporters.JUnitReportReporter"/>
-    </listeners>
 
 	<test thread-count="5" name="Login">
 		<parameter name="browser" value="chrome" />

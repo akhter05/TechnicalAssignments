@@ -1,8 +1,0 @@
-package testCases;
-
-import testBase.BaseClass;
-
-public class TC004_TestExceptionAdd extends BaseClass{
-	
-
-}
