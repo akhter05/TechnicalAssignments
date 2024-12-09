@@ -34,7 +34,6 @@
 						<suiteXmlFile>
 							grouping.xml</suiteXmlFile>
 					</suiteXmlFiles>
-					<reportFormat>xml</reportFormat>
 					<redirectTestOutputToFile>false</redirectTestOutputToFile> <!--
 					Output to console -->
 					<useFile>false</useFile> <!-- Don't redirect output to files -->

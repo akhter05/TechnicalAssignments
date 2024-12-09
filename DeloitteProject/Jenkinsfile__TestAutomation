@@ -35,8 +35,9 @@ pipeline {
         always {
             archiveArtifacts '**/target/*.html, **/target/*.log'
 			echo 'Archive all the test results, logs, or screenshots'
-            junit '**/target/surefire-reports/testng-results.xml'
-			echo 'Publishing TestNG results to Jenkins'
+			echo 'Publishing results to Jenkins from target/surefire-reports'
+			sh 'ls -l target/surefire-reports'
+			junit '**/target/surefire-reports/testng-results.xml'
         }
 
         success {
