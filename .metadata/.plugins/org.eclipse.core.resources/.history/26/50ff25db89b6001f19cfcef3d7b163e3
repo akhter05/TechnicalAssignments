@@ -30,7 +30,7 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.5.2</version>
 				<configuration>
-					<reportsDirectory>${project.build.directory}/DeloitteProject/target/surefire-reports</reportsDirectory>
+					<reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>
 					<suiteXmlFiles>
 						<suiteXmlFile>
 							grouping.xml</suiteXmlFile>
