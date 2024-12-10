@@ -29,23 +29,40 @@ pipeline {
                 sh 'mvn clean test -DsuiteXmlFile=DeloitteProject/grouping'
             }
         }
+		
+		 stage('Extent Report') {
+            steps {
+                echo 'Publishing extent report'
+				echo "The generated report is located at: ${pathofExtentReport}"
+				publishHTML(target: [
+                              allowMissing: false, 
+                              alwaysLinkToLastBuild: true, 
+                              keepAll: true, 
+                              reportDir: "${WORKSPACE}/reports", 
+                              reportFiles: "${repName}", 
+                              reportName: 'Extent Report', 
+                              reportTitles: '', 
+                              useWrapperFileDirectly: true])
+                }
+            }
+        }
     }
 
     post {
         always {
             archiveArtifacts '**/target/*.html, **/target/*.log'
 			echo 'Archive all the test results, logs, or screenshots'
-			echo 'Publishing results'
+			//echo 'Publishing results'
 			echo "The value of project.build.directory is: ${env.WORKSPACE}"
-			junit '**/target/surefire-reports/*.xml' // Publish JUnit test results
+			//junit '**/target/surefire-reports/*.xml' // Publish JUnit test results
         }
 
         success {
-            echo 'Tests passed successfully!'
+            echo 'Tests passed!'
         }
 
         failure {
-            echo 'Tests failed.'
+            echo 'Tests failed!'
         }
     }
 }

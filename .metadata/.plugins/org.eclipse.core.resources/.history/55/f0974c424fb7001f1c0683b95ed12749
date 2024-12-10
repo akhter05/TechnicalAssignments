@@ -25,7 +25,6 @@ public class ExtentReportUtility implements ITestListener {
 	public ExtentReports extent;
 	public ExtentTest test;
 	String repName;
-	String pathofExtentReport;
 
 	public void onStart(ITestContext testContext) {
 		SimpleDateFormat df = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss");
@@ -89,7 +88,7 @@ public class ExtentReportUtility implements ITestListener {
 	public void onFinish(ITestContext testContext) {
 		extent.flush();
 
-	    pathofExtentReport = System.getProperty("user.dir") + ".\\reports\\" + repName;
+		String pathofExtentReport = System.getProperty("user.dir") + ".\\reports\\" + repName;
 		File extentReport = new File(pathofExtentReport);
 
 		try {
