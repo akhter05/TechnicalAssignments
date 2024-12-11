@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="reportFormat"/>
+		<item key="selection" value="repName"/>
 		<list key="findhistory">
+			<item value="repName"/>
 			<item value="reportFormat"/>
 			<item value="testng"/>
 			<item value="surefire"/>
@@ -18,6 +19,7 @@
 			<item value="datadriven"/>
 		</list>
 		<list key="replacehistory">
+			<item value=""/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
