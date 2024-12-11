@@ -90,6 +90,8 @@ public class ExtentReportUtility implements ITestListener {
 		extent.flush();
 
 	    pathofExtentReport = System.getProperty("user.dir") + ".\\reports\\" + repName;
+	    System.setProperty("EXTENT_REPORT_NAME", repName);
+	    System.setProperty("EXTENT_REPORT_PATH", pathofExtentReport);
 		File extentReport = new File(pathofExtentReport);
 
 		try {
