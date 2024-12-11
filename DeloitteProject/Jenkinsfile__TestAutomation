@@ -44,7 +44,7 @@ pipeline {
                               allowMissing: false, 
                               alwaysLinkToLastBuild: true, 
                               keepAll: true, 
-                              reportDir: "${WORKSPACE}\DeloitteProject\reports", 
+                              reportDir: "${WORKSPACE}/DeloitteProject/reports", 
                               reportFiles: System.getenv('EXTENT_REPORT_NAME'),
                               reportName: 'Extent Report', 
                               reportTitles: '', 
