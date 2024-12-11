@@ -39,13 +39,12 @@ pipeline {
 			//echo 'Publishing results'
 			echo "The value of project.build.directory is: ${env.WORKSPACE}"
 			//junit '**/target/surefire-reports/*.xml' // Publish JUnit test results
-			echo "Publishing extent report name: System.getenv('EXTENT_REPORT_NAME')"
-			echo "The generated report is located at: System.getenv('EXTENT_REPORT_PATH')"
+			echo "Publishing extent report)"
 			publishHTML(target: [
                               allowMissing: false, 
                               alwaysLinkToLastBuild: true, 
                               keepAll: true, 
-                              reportDir: "${WORKSPACE}/DeloitteProject/reports", 
+                              reportDir: "${WORKSPACE}\DeloitteProject\reports", 
                               reportFiles: System.getenv('EXTENT_REPORT_NAME'),
                               reportName: 'Extent Report', 
                               reportTitles: '', 
