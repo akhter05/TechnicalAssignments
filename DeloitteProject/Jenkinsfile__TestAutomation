@@ -34,27 +34,26 @@ pipeline {
 
     post {
         always {
-		script { // Access the environment variable set during the test execution 
-		def reportName = env.EXTENT_REPORT_NAME
-        def reportPath = env.EXTENT_REPORT_PATH		
-		echo "EXTENT_REPORT_NAME is ${reportName}"
-		echo "EXTENT_REPORT_PATH is ${reportPath}"
-		}
-            //archiveArtifacts '**/target/*.html, **/target/*.log'
-			//echo 'Archive all the test results, logs, or screenshots'
-			//echo 'Publishing results'
-			echo "The value of project.build.directory is: ${env.WORKSPACE}"
-			//junit '**/target/surefire-reports/*.xml' // Publish JUnit test results
-			echo "Publishing extent report)"
-			publishHTML(target: [
-                              allowMissing: false, 
-                              alwaysLinkToLastBuild: true, 
-                              keepAll: true, 
-                              reportDir: "${WORKSPACE}/DeloitteProject/reports", 
-                              reportFiles: ${reportPath},
-                              reportName: 'Extent Report', 
-                              reportTitles: '', 
-                              useWrapperFileDirectly: true])
+		script { 
+		def reportName = System.getProperty("EXTENT_REPORT_NAME", "") 
+		def reportPath = System.getProperty("EXTENT_REPORT_PATH", "") 
+		if (reportName && reportPath) 
+		{ env.EXTENT_REPORT_NAME = reportName
+		env.EXTENT_REPORT_PATH = reportPath 
+		echo "EXTENT_REPORT_NAME is ${env.EXTENT_REPORT_NAME}" 
+		echo "EXTENT_REPORT_PATH is ${env.EXTENT_REPORT_PATH}" } 
+		else { error "EXTENT_REPORT_NAME or EXTENT_REPORT_PATH is not set." } // Ensure report path is properly formatted for the publishHTML step def reportDir = "${env.WORKSPACE}/DeloitteProject/reports"
+		def reportFile = reportPath.replace("\\", "/").split('/').last() // Publish extent report 
+		publishHTML(target: [ 
+		allowMissing: false,
+		alwaysLinkToLastBuild: true, 
+		keepAll: true, 
+		reportDir: reportDir, 
+		reportFiles: reportFile, 
+		reportName: 'Extent Report', 
+		reportTitles: '', 
+		useWrapperFileDirectly: true 
+		])		
         }
 
         success {
@@ -69,5 +68,4 @@ pipeline {
     echo 'Pipeline is marked as unstable!'
         }
 
-    }
 	}
