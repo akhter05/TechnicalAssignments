@@ -34,36 +34,40 @@ pipeline {
 
     post {
         always {
-		script { 
-		
-		def reportName = System.getProperty("EXTENT_REPORT_NAME", "") 
-		def reportPath = System.getProperty("EXTENT_REPORT_PATH", "") 
-		
-		if (reportName && reportPath) { 
-		env.EXTENT_REPORT_NAME = reportName
-		env.EXTENT_REPORT_PATH = reportPath 
-		
-		echo "EXTENT_REPORT_NAME is ${env.EXTENT_REPORT_NAME}" 
-		echo "EXTENT_REPORT_PATH is ${env.EXTENT_REPORT_PATH}" } 
-		
-		else { 
-		error "EXTENT_REPORT_NAME or EXTENT_REPORT_PATH is not set." }
-		// Ensure report path is properly formatted for the publishHTML step
-		def reportDir = "${env.WORKSPACE}/DeloitteProject/reports"
-		def reportFile = reportPath.replace("\\", "/").split('/').last()
-		// Publish extent report 
-		publishHTML(target: [ 
-		allowMissing: false,
-		alwaysLinkToLastBuild: true, 
-		keepAll: true, 
-		reportDir: reportDir, 
-		reportFiles: reportFile, 
-		reportName: 'Extent Report', 
-		reportTitles: '', 
-		useWrapperFileDirectly: true 
-		])		
-        }
+            script {
+                def reportName = System.getProperty("EXTENT_REPORT_NAME", "")
+                def reportPath = System.getProperty("EXTENT_REPORT_PATH", "")
 
+                if (reportName && reportPath) {
+                    env.EXTENT_REPORT_NAME = reportName
+                    env.EXTENT_REPORT_PATH = reportPath
+
+                    echo "EXTENT_REPORT_NAME is ${env.EXTENT_REPORT_NAME}"
+                    echo "EXTENT_REPORT_PATH is ${env.EXTENT_REPORT_PATH}"
+                } else {
+                    error "EXTENT_REPORT_NAME or EXTENT_REPORT_PATH is not set."
+                }
+
+                // Ensure report path is properly formatted for the publishHTML step
+                def reportDir = "${env.WORKSPACE}/DeloitteProject/reports"
+                def reportFile = reportPath.replace("\\", "/").split('/').last()
+
+                // Publish extent report
+                publishHTML(target: [
+                    allowMissing: false,
+                    alwaysLinkToLastBuild: true,
+                    keepAll: true,
+                    reportDir: reportDir,
+                    reportFiles: reportFile,
+                    reportName: 'Extent Report',
+                    reportTitles: '',
+                    useWrapperFileDirectly: true
+                ])
+            }
+
+            echo "The value of project.build.directory is: ${env.WORKSPACE}"
+        }
+		
         success {
             echo 'Tests passed!'
         }
@@ -76,6 +80,5 @@ pipeline {
     echo 'Pipeline is marked as unstable!'
         }
 
-	}
-	}
+    }
 	}
