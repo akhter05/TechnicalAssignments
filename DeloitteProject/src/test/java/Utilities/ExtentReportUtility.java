@@ -2,6 +2,7 @@ package Utilities;
 
 import java.awt.Desktop;
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -92,9 +93,13 @@ public class ExtentReportUtility implements ITestListener {
 	    pathofExtentReport = System.getProperty("user.dir") + ".\\reports\\" + repName;
 	    System.setProperty("EXTENT_REPORT_NAME", repName);
 	    System.setProperty("EXTENT_REPORT_PATH", pathofExtentReport);
-	    
-	    System.out.println("EXTENT_REPORT_NAME: " + System.getProperty("EXTENT_REPORT_NAME"));
-	    System.out.println("EXTENT_REPORT_PATH: " + System.getProperty("EXTENT_REPORT_PATH"));
+	    try (FileWriter writer = new FileWriter("extent_report_details.txt.txt")) 
+	    {
+	    writer.write(repName + "," + pathofExtentReport);
+	    }
+	    catch (IOException e) 
+	    { e.printStackTrace();
+	    }
 	    		
 		File extentReport = new File(pathofExtentReport);
 

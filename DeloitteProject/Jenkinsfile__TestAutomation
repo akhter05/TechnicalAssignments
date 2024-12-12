@@ -35,10 +35,14 @@ pipeline {
     post {
         always {
             script {
-                def reportName = System.getProperty("EXTENT_REPORT_NAME", "")
-                def reportPath = System.getProperty("EXTENT_REPORT_PATH", "")
-
-                if (reportName && reportPath) {
+                
+				// Read the report details from the file
+				def reportDetails = readFile 'extent_report_details.txt'
+				def reportDetailsArray = reportDetails.split(',')
+				def reportName = reportDetailsArray[0].trim()
+				def reportPath = reportDetailsArray[1].trim()
+				
+				if (reportName && reportPath) {
                     env.EXTENT_REPORT_NAME = reportName
                     env.EXTENT_REPORT_PATH = reportPath
 
