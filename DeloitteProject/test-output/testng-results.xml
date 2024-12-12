@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+<testng-results ignored="0" total="6" passed="0" failed="6" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-11T09:40:19 AEST" name="Master Suite" finished-at="2024-12-11T09:41:38 AEST" duration-ms="78784">
+  <suite started-at="2024-12-12T10:36:28 AEST" name="Master Suite" finished-at="2024-12-12T10:38:06 AEST" duration-ms="97730">
     <groups>
       <group name="regression">
         <method signature="TC002_LogInFail.Verify_Login_Fail()[pri:0, instance:testCases.TC002_LogInFail@49438269]" name="Verify_Login_Fail" class="testCases.TC002_LogInFail"/>
@@ -23,9 +23,9 @@
         <method signature="TC007_ContactFormValidation.verify_ContactPage_Fields()[pri:0, instance:testCases.TC007_ContactFormValidation@4e08711f]" name="verify_ContactPage_Fields" class="testCases.TC007_ContactFormValidation"/>
       </group> <!-- master -->
     </groups>
-    <test started-at="2024-12-11T09:40:19 AEST" name="Login" finished-at="2024-12-11T09:41:38 AEST" duration-ms="78784">
+    <test started-at="2024-12-12T10:36:28 AEST" name="Login" finished-at="2024-12-12T10:38:06 AEST" duration-ms="97730">
       <class name="testCases.TC005_PrivacyPolicyLink">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC005_PrivacyPolicyLink@1c1bbc4e]" started-at="2024-12-11T09:41:12 AEST" name="setup" finished-at="2024-12-11T09:41:16 AEST" duration-ms="3274" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC005_PrivacyPolicyLink@1c1bbc4e]" started-at="2024-12-12T10:37:38 AEST" name="setup" finished-at="2024-12-12T10:37:41 AEST" duration-ms="3802" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,17 +41,55 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Verify_PrivacyPolicyLink()[pri:0, instance:testCases.TC005_PrivacyPolicyLink@1c1bbc4e]" started-at="2024-12-11T09:41:16 AEST" name="Verify_PrivacyPolicyLink" finished-at="2024-12-11T09:41:17 AEST" duration-ms="1123" status="PASS">
+        <test-method signature="Verify_PrivacyPolicyLink()[pri:0, instance:testCases.TC005_PrivacyPolicyLink@1c1bbc4e]" started-at="2024-12-12T10:37:41 AEST" name="Verify_PrivacyPolicyLink" finished-at="2024-12-12T10:37:52 AEST" duration-ms="10374" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at testCases.TC005_PrivacyPolicyLink.Verify_PrivacyPolicyLink(TC005_PrivacyPolicyLink.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_PrivacyPolicyLink -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC005_PrivacyPolicyLink@1c1bbc4e]" started-at="2024-12-11T09:41:17 AEST" name="tearDown" finished-at="2024-12-11T09:41:17 AEST" duration-ms="379" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC005_PrivacyPolicyLink@1c1bbc4e]" started-at="2024-12-12T10:37:52 AEST" name="tearDown" finished-at="2024-12-12T10:37:52 AEST" duration-ms="302" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.TC005_PrivacyPolicyLink -->
       <class name="testCases.TC004_TestException_ElementNotInteractableException">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC004_TestException_ElementNotInteractableException@55fe41ea]" started-at="2024-12-11T09:41:17 AEST" name="setup" finished-at="2024-12-11T09:41:20 AEST" duration-ms="3200" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC004_TestException_ElementNotInteractableException@55fe41ea]" started-at="2024-12-12T10:37:52 AEST" name="setup" finished-at="2024-12-12T10:37:55 AEST" duration-ms="2737" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -67,17 +105,55 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Verify_ElementNotInteractableException()[pri:0, instance:testCases.TC004_TestException_ElementNotInteractableException@55fe41ea]" started-at="2024-12-11T09:41:20 AEST" name="Verify_ElementNotInteractableException" finished-at="2024-12-11T09:41:37 AEST" duration-ms="16913" status="PASS">
+        <test-method signature="Verify_ElementNotInteractableException()[pri:0, instance:testCases.TC004_TestException_ElementNotInteractableException@55fe41ea]" started-at="2024-12-12T10:37:55 AEST" name="Verify_ElementNotInteractableException" finished-at="2024-12-12T10:38:05 AEST" duration-ms="10176" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at testCases.TC004_TestException_ElementNotInteractableException.Verify_ElementNotInteractableException(TC004_TestException_ElementNotInteractableException.java:42)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_ElementNotInteractableException -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC004_TestException_ElementNotInteractableException@55fe41ea]" started-at="2024-12-11T09:41:37 AEST" name="tearDown" finished-at="2024-12-11T09:41:38 AEST" duration-ms="227" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC004_TestException_ElementNotInteractableException@55fe41ea]" started-at="2024-12-12T10:38:05 AEST" name="tearDown" finished-at="2024-12-12T10:38:06 AEST" duration-ms="211" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.TC004_TestException_ElementNotInteractableException -->
       <class name="testCases.TC007_ContactFormValidation">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC007_ContactFormValidation@4e08711f]" started-at="2024-12-11T09:40:19 AEST" name="setup" finished-at="2024-12-11T09:40:28 AEST" duration-ms="8826" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC007_ContactFormValidation@4e08711f]" started-at="2024-12-12T10:36:28 AEST" name="setup" finished-at="2024-12-12T10:36:40 AEST" duration-ms="11368" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -93,33 +169,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify_ContactPage_Fields()[pri:0, instance:testCases.TC007_ContactFormValidation@4e08711f]" started-at="2024-12-11T09:40:28 AEST" name="verify_ContactPage_Fields" finished-at="2024-12-11T09:40:33 AEST" duration-ms="4707" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_ContactPage_Fields -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC007_ContactFormValidation@4e08711f]" started-at="2024-12-11T09:40:33 AEST" name="tearDown" finished-at="2024-12-11T09:40:33 AEST" duration-ms="159" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC007_ContactFormValidation -->
-      <class name="testCases.TC001_LogInSuccess">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_LogInSuccess@367ffa75]" started-at="2024-12-11T09:40:52 AEST" name="setup" finished-at="2024-12-11T09:40:55 AEST" duration-ms="3455" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Windows]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="Veiry_Login_Success()[pri:0, instance:testCases.TC001_LogInSuccess@367ffa75]" started-at="2024-12-11T09:40:55 AEST" name="Veiry_Login_Success" finished-at="2024-12-11T09:41:07 AEST" duration-ms="11869" status="FAIL">
+        <test-method signature="verify_ContactPage_Fields()[pri:0, instance:testCases.TC007_ContactFormValidation@4e08711f]" started-at="2024-12-12T10:36:40 AEST" name="verify_ContactPage_Fields" finished-at="2024-12-12T10:36:50 AEST" duration-ms="10227" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -130,7 +180,135 @@ at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1578)
 at org.testng.Assert.assertTrue(Assert.java:57)
 at org.testng.Assert.assertTrue(Assert.java:67)
-at testCases.TC001_LogInSuccess.Veiry_Login_Success(TC001_LogInSuccess.java:36)
+at testCases.TC007_ContactFormValidation.verify_ContactPage_Fields(TC007_ContactFormValidation.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ContactPage_Fields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC007_ContactFormValidation@4e08711f]" started-at="2024-12-12T10:36:50 AEST" name="tearDown" finished-at="2024-12-12T10:36:50 AEST" duration-ms="353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC007_ContactFormValidation -->
+      <class name="testCases.TC002_LogInFail">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_LogInFail@49438269]" started-at="2024-12-12T10:37:22 AEST" name="setup" finished-at="2024-12-12T10:37:27 AEST" duration-ms="4617" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Verify_Login_Fail()[pri:0, instance:testCases.TC002_LogInFail@49438269]" started-at="2024-12-12T10:37:27 AEST" name="Verify_Login_Fail" finished-at="2024-12-12T10:37:37 AEST" duration-ms="10063" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at testCases.TC002_LogInFail.Verify_Login_Fail(TC002_LogInFail.java:46)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Login_Fail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC002_LogInFail@49438269]" started-at="2024-12-12T10:37:37 AEST" name="tearDown" finished-at="2024-12-12T10:37:38 AEST" duration-ms="247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC002_LogInFail -->
+      <class name="testCases.TC001_LogInSuccess">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_LogInSuccess@367ffa75]" started-at="2024-12-12T10:37:07 AEST" name="setup" finished-at="2024-12-12T10:37:12 AEST" duration-ms="4948" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Veiry_Login_Success()[pri:0, instance:testCases.TC001_LogInSuccess@367ffa75]" started-at="2024-12-12T10:37:12 AEST" name="Veiry_Login_Success" finished-at="2024-12-12T10:37:22 AEST" duration-ms="10033" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at testCases.TC001_LogInSuccess.Veiry_Login_Success(TC001_LogInSuccess.java:41)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -163,39 +341,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Veiry_Login_Success -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC001_LogInSuccess@367ffa75]" started-at="2024-12-11T09:41:07 AEST" name="tearDown" finished-at="2024-12-11T09:41:07 AEST" duration-ms="316" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC001_LogInSuccess@367ffa75]" started-at="2024-12-12T10:37:22 AEST" name="tearDown" finished-at="2024-12-12T10:37:22 AEST" duration-ms="195" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.TC001_LogInSuccess -->
-      <class name="testCases.TC002_LogInFail">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_LogInFail@49438269]" started-at="2024-12-11T09:41:07 AEST" name="setup" finished-at="2024-12-11T09:41:11 AEST" duration-ms="3254" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Windows]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="Verify_Login_Fail()[pri:0, instance:testCases.TC002_LogInFail@49438269]" started-at="2024-12-11T09:41:11 AEST" name="Verify_Login_Fail" finished-at="2024-12-11T09:41:12 AEST" duration-ms="1481" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_Login_Fail -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC002_LogInFail@49438269]" started-at="2024-12-11T09:41:12 AEST" name="tearDown" finished-at="2024-12-11T09:41:12 AEST" duration-ms="249" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC002_LogInFail -->
       <class name="testCases.TC006_CoursesSubscriptionRadioButtons">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC006_CoursesSubscriptionRadioButtons@2cd76f31]" started-at="2024-12-11T09:40:33 AEST" name="setup" finished-at="2024-12-11T09:40:38 AEST" duration-ms="5328" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC006_CoursesSubscriptionRadioButtons@2cd76f31]" started-at="2024-12-12T10:36:50 AEST" name="setup" finished-at="2024-12-12T10:36:55 AEST" duration-ms="4543" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -211,11 +363,51 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Verify_SubscriptionPage_RadioButtons()[pri:0, instance:testCases.TC006_CoursesSubscriptionRadioButtons@2cd76f31]" started-at="2024-12-11T09:40:38 AEST" name="Verify_SubscriptionPage_RadioButtons" finished-at="2024-12-11T09:40:51 AEST" duration-ms="12820" status="PASS">
+        <test-method signature="Verify_SubscriptionPage_RadioButtons()[pri:0, instance:testCases.TC006_CoursesSubscriptionRadioButtons@2cd76f31]" started-at="2024-12-12T10:36:55 AEST" name="Verify_SubscriptionPage_RadioButtons" finished-at="2024-12-12T10:37:05 AEST" duration-ms="10196" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at testCases.TC006_CoursesSubscriptionRadioButtons.Verify_SubscriptionPage_RadioButtons(TC006_CoursesSubscriptionRadioButtons.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_SubscriptionPage_RadioButtons -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC006_CoursesSubscriptionRadioButtons@2cd76f31]" started-at="2024-12-11T09:40:51 AEST" name="tearDown" finished-at="2024-12-11T09:40:52 AEST" duration-ms="574" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC006_CoursesSubscriptionRadioButtons@2cd76f31]" started-at="2024-12-12T10:37:06 AEST" name="tearDown" finished-at="2024-12-12T10:37:07 AEST" duration-ms="736" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

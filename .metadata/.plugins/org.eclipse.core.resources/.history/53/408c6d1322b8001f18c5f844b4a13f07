@@ -94,6 +94,14 @@ public class ExtentReportUtility implements ITestListener {
 	    System.setProperty("EXTENT_REPORT_NAME", repName);
 	    
 	    System.out.println("EXTENT_REPORT_NAME: " + System.getProperty("EXTENT_REPORT_NAME")); 
+	    
+	    try (FileWriter writer = new FileWriter("extent_report_details.txt")) 
+	    {
+	    writer.write(repName + "," + pathofExtentReport);
+	    }
+	    catch (IOException e) 
+	    { e.printStackTrace();
+	    }
 	    		
 		File extentReport = new File(pathofExtentReport);
 

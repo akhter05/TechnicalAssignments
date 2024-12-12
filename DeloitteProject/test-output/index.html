@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
+                    <span class="method-stats">6 methods, 6 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -106,41 +106,32 @@
                         <a href="#" panel-name="suite-Master_Suite" title="testCases.TC001_LogInSuccess" class="method navigator-link" hash-for-method="Veiry_Login_Success">Veiry_Login_Success</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Master_Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Master_Suite" class="hide-methods passed suite-Master_Suite"> (hide)</a> <!-- hide-methods passed suite-Master_Suite -->
-                      <a href="#" panel-name="suite-Master_Suite" class="show-methods passed suite-Master_Suite"> (show)</a> <!-- show-methods passed suite-Master_Suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Master_Suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Master_Suite" title="testCases.TC004_TestException_ElementNotInteractableException" class="method navigator-link" hash-for-method="Verify_ElementNotInteractableException">Verify_ElementNotInteractableException</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Master_Suite" title="testCases.TC002_LogInFail" class="method navigator-link" hash-for-method="Verify_Login_Fail">Verify_Login_Fail</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Master_Suite" title="testCases.TC005_PrivacyPolicyLink" class="method navigator-link" hash-for-method="Verify_PrivacyPolicyLink">Verify_PrivacyPolicyLink</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Master_Suite" title="testCases.TC006_CoursesSubscriptionRadioButtons" class="method navigator-link" hash-for-method="Verify_SubscriptionPage_RadioButtons">Verify_SubscriptionPage_RadioButtons</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Master_Suite" title="testCases.TC007_ContactFormValidation" class="method navigator-link" hash-for-method="verify_ContactPage_Fields">verify_ContactPage_Fields</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Master_Suite -->
+                    </div> <!-- method-list-content failed suite-Master_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -155,26 +146,6 @@
           <div class="suite-Master_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">testCases.TC001_LogInSuccess</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="Veiry_Login_Success">
-                  </a> <!-- Veiry_Login_Success -->
-                  <span class="method-name">Veiry_Login_Success</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at testCases.TC001_LogInSuccess.Veiry_Login_Success(TC001_LogInSuccess.java:36)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Master_Suite-class-failed -->
-          <div class="suite-Master_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">testCases.TC002_LogInFail</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -183,13 +154,18 @@
                   <a name="Verify_Login_Fail">
                   </a> <!-- Verify_Login_Fail -->
                   <span class="method-name">Verify_Login_Fail</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at testCases.TC002_LogInFail.Verify_Login_Fail(TC002_LogInFail.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Master_Suite-class-passed -->
-          <div class="suite-Master_Suite-class-passed">
+          </div> <!-- suite-Master_Suite-class-failed -->
+          <div class="suite-Master_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">testCases.TC004_TestException_ElementNotInteractableException</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -198,13 +174,18 @@
                   <a name="Verify_ElementNotInteractableException">
                   </a> <!-- Verify_ElementNotInteractableException -->
                   <span class="method-name">Verify_ElementNotInteractableException</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at testCases.TC004_TestException_ElementNotInteractableException.Verify_ElementNotInteractableException(TC004_TestException_ElementNotInteractableException.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Master_Suite-class-passed -->
-          <div class="suite-Master_Suite-class-passed">
+          </div> <!-- suite-Master_Suite-class-failed -->
+          <div class="suite-Master_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">testCases.TC007_ContactFormValidation</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -213,13 +194,18 @@
                   <a name="verify_ContactPage_Fields">
                   </a> <!-- verify_ContactPage_Fields -->
                   <span class="method-name">verify_ContactPage_Fields</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at testCases.TC007_ContactFormValidation.verify_ContactPage_Fields(TC007_ContactFormValidation.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Master_Suite-class-passed -->
-          <div class="suite-Master_Suite-class-passed">
+          </div> <!-- suite-Master_Suite-class-failed -->
+          <div class="suite-Master_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">testCases.TC006_CoursesSubscriptionRadioButtons</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -228,13 +214,18 @@
                   <a name="Verify_SubscriptionPage_RadioButtons">
                   </a> <!-- Verify_SubscriptionPage_RadioButtons -->
                   <span class="method-name">Verify_SubscriptionPage_RadioButtons</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at testCases.TC006_CoursesSubscriptionRadioButtons.Verify_SubscriptionPage_RadioButtons(TC006_CoursesSubscriptionRadioButtons.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Master_Suite-class-passed -->
-          <div class="suite-Master_Suite-class-passed">
+          </div> <!-- suite-Master_Suite-class-failed -->
+          <div class="suite-Master_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">testCases.TC005_PrivacyPolicyLink</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -243,10 +234,35 @@
                   <a name="Verify_PrivacyPolicyLink">
                   </a> <!-- Verify_PrivacyPolicyLink -->
                   <span class="method-name">Verify_PrivacyPolicyLink</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at testCases.TC005_PrivacyPolicyLink.Verify_PrivacyPolicyLink(TC005_PrivacyPolicyLink.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Master_Suite-class-passed -->
+          </div> <!-- suite-Master_Suite-class-failed -->
+          <div class="suite-Master_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.TC001_LogInSuccess</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Veiry_Login_Success">
+                  </a> <!-- Veiry_Login_Success -->
+                  <span class="method-name">Veiry_Login_Success</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at testCases.TC001_LogInSuccess.Veiry_Login_Success(TC001_LogInSuccess.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Master_Suite-class-failed -->
         </div> <!-- panel Master_Suite -->
         <div panel-name="test-xml-Master_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -384,34 +400,34 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Verify_ElementNotInteractableException')
-data.setCell(0, 2, 'testCases.TC004_TestException_ElementNotInteractableException')
-data.setCell(0, 3, 16913);
+data.setCell(0, 1, 'Verify_PrivacyPolicyLink')
+data.setCell(0, 2, 'testCases.TC005_PrivacyPolicyLink')
+data.setCell(0, 3, 10374);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Verify_SubscriptionPage_RadioButtons')
-data.setCell(1, 2, 'testCases.TC006_CoursesSubscriptionRadioButtons')
-data.setCell(1, 3, 12820);
+data.setCell(1, 1, 'verify_ContactPage_Fields')
+data.setCell(1, 2, 'testCases.TC007_ContactFormValidation')
+data.setCell(1, 3, 10227);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Veiry_Login_Success')
-data.setCell(2, 2, 'testCases.TC001_LogInSuccess')
-data.setCell(2, 3, 11869);
+data.setCell(2, 1, 'Verify_SubscriptionPage_RadioButtons')
+data.setCell(2, 2, 'testCases.TC006_CoursesSubscriptionRadioButtons')
+data.setCell(2, 3, 10196);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verify_ContactPage_Fields')
-data.setCell(3, 2, 'testCases.TC007_ContactFormValidation')
-data.setCell(3, 3, 4707);
+data.setCell(3, 1, 'Verify_ElementNotInteractableException')
+data.setCell(3, 2, 'testCases.TC004_TestException_ElementNotInteractableException')
+data.setCell(3, 3, 10176);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'Verify_Login_Fail')
 data.setCell(4, 2, 'testCases.TC002_LogInFail')
-data.setCell(4, 3, 1481);
+data.setCell(4, 3, 10063);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'Verify_PrivacyPolicyLink')
-data.setCell(5, 2, 'testCases.TC005_PrivacyPolicyLink')
-data.setCell(5, 3, 1123);
+data.setCell(5, 1, 'Veiry_Login_Success')
+data.setCell(5, 2, 'testCases.TC001_LogInSuccess')
+data.setCell(5, 3, 10033);
 window.suiteTableData['Master_Suite']= { tableData: data, tableDiv: 'times-div-Master_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 48 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Master_Suite">
               </div> <!-- times-div-Master_Suite -->
             </div> <!-- times-div -->
@@ -450,89 +466,99 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verify_ContactPage_Fields</span>
-                <span class="method-start">8848 ms</span>
+                <span class="method-start">11381 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">13591 ms</span>
+                <span class="method-start">21813 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC006_CoursesSubscriptionRadioButtons</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(chrome, Windows)</span>
-                <span class="method-start">13756 ms</span>
+                <span class="method-start">22172 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">Verify_SubscriptionPage_RadioButtons</span>
-                <span class="method-start">19087 ms</span>
+                <span class="method-start">26716 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">31927 ms</span>
+                <span class="method-start">37920 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC001_LogInSuccess</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(chrome, Windows)</span>
-                <span class="method-start">32502 ms</span>
+                <span class="method-start">38658 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Veiry_Login_Success</span>
-                <span class="method-start">35962 ms</span>
+                <span class="method-start">43615 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">47986 ms</span>
+                <span class="method-start">53814 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC002_LogInFail</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(chrome, Windows)</span>
-                <span class="method-start">48303 ms</span>
+                <span class="method-start">54010 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">Verify_Login_Fail</span>
-                <span class="method-start">51570 ms</span>
+                <span class="method-start">58635 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">53053 ms</span>
+                <span class="method-start">69039 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC005_PrivacyPolicyLink</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(chrome, Windows)</span>
-                <span class="method-start">53302 ms</span>
+                <span class="method-start">69287 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">Verify_PrivacyPolicyLink</span>
-                <span class="method-start">56578 ms</span>
+                <span class="method-start">73091 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">57705 ms</span>
+                <span class="method-start">83751 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC004_TestException_ElementNotInteractableException</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(chrome, Windows)</span>
-                <span class="method-start">58084 ms</span>
+                <span class="method-start">84056 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">Verify_ElementNotInteractableException</span>
-                <span class="method-start">61292 ms</span>
+                <span class="method-start">86796 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">78210 ms</span>
+                <span class="method-start">97187 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

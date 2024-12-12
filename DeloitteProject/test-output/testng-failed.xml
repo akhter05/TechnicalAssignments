@@ -14,6 +14,41 @@
       </run>
     </groups>
     <classes>
+      <class name="testCases.TC002_LogInFail">
+        <methods>
+          <include name="Verify_Login_Fail"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.TC002_LogInFail -->
+      <class name="testCases.TC004_TestException_ElementNotInteractableException">
+        <methods>
+          <include name="Verify_ElementNotInteractableException"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.TC004_TestException_ElementNotInteractableException -->
+      <class name="testCases.TC007_ContactFormValidation">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verify_ContactPage_Fields"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.TC007_ContactFormValidation -->
+      <class name="testCases.TC006_CoursesSubscriptionRadioButtons">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="Verify_SubscriptionPage_RadioButtons"/>
+        </methods>
+      </class> <!-- testCases.TC006_CoursesSubscriptionRadioButtons -->
+      <class name="testCases.TC005_PrivacyPolicyLink">
+        <methods>
+          <include name="tearDown"/>
+          <include name="Verify_PrivacyPolicyLink"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.TC005_PrivacyPolicyLink -->
       <class name="testCases.TC001_LogInSuccess">
         <methods>
           <include name="Veiry_Login_Success"/>
