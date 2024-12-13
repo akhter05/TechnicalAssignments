@@ -44,7 +44,7 @@ pipeline {
                     echo "Report folder is : ${reportDir}"
 					
           // Debugging: List files in the directory to ensure there are files
-            def fileList = bat(script: """
+            def fileList = powershell(script: """
                 Get-ChildItem -Path '${reportDir}' | Select-Object -ExpandProperty Name
             """, returnStdout: true).trim()
 			
@@ -56,7 +56,7 @@ pipeline {
             }
 			
 			// Find the latest report file based on modification time (PowerShell)
-            def latestReport = bat(script: """
+            def latestReport = powershell(script: """
                 Get-ChildItem -Path '${reportDir}' | Sort-Object LastWriteTime -Descending | Select-Object -First 1 | Select-Object -ExpandProperty Name
             """, returnStdout: true).trim()
 					
