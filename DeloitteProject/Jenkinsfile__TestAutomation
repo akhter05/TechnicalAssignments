@@ -44,11 +44,11 @@ pipeline {
                     echo "Report folder is : ${reportDir}"
 					
                     // Find the latest file based on modification time
-                    def latestReport = sh(script: """
-                        cd ${reportDir}
-                        ls -t | head -n 1
-                    """, returnStdout: true).trim()
-
+                 
+					cd ${reportDir}
+					def latestReport = ls -t | head -n 1
+					
+                  
                     // Set the latest report's file path
                     def reportPath = "${reportDir}/${latestReport}"
 
@@ -57,6 +57,8 @@ pipeline {
 
                     // Set the environment variable for the report
                     env.REPORT_PATH = reportPath
+					
+					cd ${correctedPath}
 
                 // Publish extent report
                 publishHTML(target: [
