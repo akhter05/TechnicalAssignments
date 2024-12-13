@@ -37,7 +37,7 @@ pipeline {
 		 echo "The value of project build directory is: ${env.WORKSPACE}"
             script {
               	// Define the directory path
-                    def reportDir = "${env.WORKSPACE}\\DeloitteProject\\reports"
+                    def reportDir = "${env.WORKSPACE}/DeloitteProject/reports"
                     echo "Report folder is : ${reportDir}"
 					
                     // Find the latest file based on modification time
@@ -47,7 +47,7 @@ pipeline {
                     """, returnStdout: true).trim()
 
                     // Set the latest report's file path
-                    def reportPath = "${reportDir}\\${latestReport}"
+                    def reportPath = "${reportDir}/${latestReport}"
 
                     // Print the latest report file for debugging purposes
                     echo "Latest report path is : ${reportPath}"
