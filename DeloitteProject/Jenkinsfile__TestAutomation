@@ -34,10 +34,26 @@ pipeline {
 
     post {
         always {
+		 echo "The value of project build directory is: ${env.WORKSPACE}"
             script {
-              	env.REPORT_NAME = sh(script: 'echo $extentReportName', returnStdout: true).trim()
-                echo "Generated report name is : ${env.REPORT_NAME}"
-                def reportDir = "${env.WORKSPACE}/DeloitteProject/reports"
+              	// Define the directory path
+                    def reportDir = '${env.WORKSPACE}\\DeloitteProject\\reports'
+                    echo "Report folder is : ${reportPath}"
+					
+                    // Find the latest file based on modification time
+                    def latestReport = sh(script: """
+                        cd ${reportDir}
+                        ls -t | head -n 1
+                    """, returnStdout: true).trim()
+
+                    // Set the latest report's file path
+                    def reportPath = "${reportDir}\\${latestReport}"
+
+                    // Print the latest report file for debugging purposes
+                    echo "Latest report path is : ${reportPath}"
+
+                    // Set the environment variable for the report
+                    env.REPORT_PATH = reportPath
 
                 // Publish extent report
                 publishHTML(target: [
@@ -45,13 +61,10 @@ pipeline {
                     alwaysLinkToLastBuild: true,
                     keepAll: true,
                     reportDir: reportDir,
-                    reportFiles: ${env.REPORT_NAME},
-                    reportName: 'Extent Report',
-                    useWrapperFileDirectly: true
+                    reportFiles: ${env.REPORT_PATH},
+                    reportName: 'Extent Report'
                 ])
             }
-
-            echo "The value of project.build.directory is: ${env.WORKSPACE}"
         }
    	
 
