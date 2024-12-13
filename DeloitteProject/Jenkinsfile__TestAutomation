@@ -37,9 +37,10 @@ pipeline {
 		 echo "The value of project build directory is: ${env.WORKSPACE}"
             script {
               	// Define the directory path
-				    def workspacePath = ${env.WORKSPACE}
+				    def workspacePath = env.WORKSPACE
 					def correctedPath = workspacePath.replace('\\', '/')
                     def reportDir = "${correctedPath}/DeloitteProject/reports"
+					
                     echo "Report folder is : ${reportDir}"
 					
                     // Find the latest file based on modification time
@@ -63,7 +64,7 @@ pipeline {
                     alwaysLinkToLastBuild: true,
                     keepAll: true,
                     reportDir: reportDir,
-                    reportFiles: ${env.REPORT_PATH},
+                    reportFiles: env.REPORT_PATH,
                     reportName: 'Extent Report'
                 ])
             }
