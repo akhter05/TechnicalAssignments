@@ -8,6 +8,7 @@
 		<item key="isRegEx" value="false"/>
 		<item key="selection" value="repName"/>
 		<list key="findhistory">
+			<item value="package Utilities;"/>
 			<item value="repName"/>
 			<item value="reportFormat"/>
 			<item value="testng"/>

@@ -35,17 +35,8 @@ pipeline {
     post {
         always {
             script {
-                def repName = System.getProperty("EXTENT_REPORT_NAME", "")
-               
-                if (repName) {
-                    env.EXTENT_REPORT_NAME = repName
-
-                    echo "EXTENT_REPORT_NAME is ${env.EXTENT_REPORT_NAME}"
-                } else {
-                    error "EXTENT_REPORT_NAME  is not set."
-                }
-
-                // Ensure report path is properly formatted for the publishHTML step
+              	env.REPORT_NAME = sh(script: 'echo $extentReportName', returnStdout: true).trim()
+                echo "Generated report name is : ${env.REPORT_NAME}"
                 def reportDir = "${env.WORKSPACE}/DeloitteProject/reports"
 
                 // Publish extent report
@@ -54,9 +45,8 @@ pipeline {
                     alwaysLinkToLastBuild: true,
                     keepAll: true,
                     reportDir: reportDir,
-                    reportFiles: ${env.EXTENT_REPORT_NAME},
+                    reportFiles: ${env.REPORT_NAME},
                     reportName: 'Extent Report',
-                    reportTitles: '',
                     useWrapperFileDirectly: true
                 ])
             }

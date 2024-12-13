@@ -91,9 +91,9 @@ public class ExtentReportUtility implements ITestListener {
 		extent.flush();
 
 	    pathofExtentReport = System.getProperty("user.dir") + ".\\reports\\" + repName;
-	    System.setProperty("EXTENT_REPORT_NAME", repName);
+	    System.setProperty("extentReportName ", repName);
 	    
-	    System.out.println("EXTENT_REPORT_NAME: " + System.getProperty("EXTENT_REPORT_NAME")); 
+	    System.out.println("Extent Report Name: " + System.getProperty("extentReportName")); 
 	    		
 		File extentReport = new File(pathofExtentReport);
 
