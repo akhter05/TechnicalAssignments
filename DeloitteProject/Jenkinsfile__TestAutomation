@@ -38,7 +38,7 @@ pipeline {
             script {
               	// Define the directory path
                     def reportDir = '${env.WORKSPACE}\\DeloitteProject\\reports'
-                    echo "Report folder is : ${reportPath}"
+                    echo "Report folder is : ${reportDir}"
 					
                     // Find the latest file based on modification time
                     def latestReport = sh(script: """
