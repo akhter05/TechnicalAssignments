@@ -43,10 +43,21 @@ pipeline {
 					
                     echo "Report folder is : ${reportDir}"
 					
-                    // Find the latest report file based on modification time (using sh step for shell commands)
-            def latestReport = sh(script: """
-                cd ${reportDir}
-                ls -t | head -n 1
+          // Debugging: List files in the directory to ensure there are files
+            def fileList = bat(script: """
+                Get-ChildItem -Path '${reportDir}' | Select-Object -ExpandProperty Name
+            """, returnStdout: true).trim()
+			
+			 echo "Files in report directory: ${fileList}"
+			 
+			 // Ensure files are listed before proceeding
+            if (!fileList) {
+                error "No files found in report directory: ${reportDir}"
+            }
+			
+			// Find the latest report file based on modification time (PowerShell)
+            def latestReport = bat(script: """
+                Get-ChildItem -Path '${reportDir}' | Sort-Object LastWriteTime -Descending | Select-Object -First 1 | Select-Object -ExpandProperty Name
             """, returnStdout: true).trim()
 					
                     echo "Latest report name is : ${latestReport}"
