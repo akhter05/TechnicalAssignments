@@ -49,7 +49,7 @@ pipeline {
                 ls -t | head -n 1
             """, returnStdout: true).trim()
 					
-                  
+                    echo "Latest report name is : ${latestReport}"
                     // Set the latest report's file path
                     def reportPath = "${reportDir}/${latestReport}"
 
